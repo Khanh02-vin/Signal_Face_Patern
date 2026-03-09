@@ -1,0 +1,301 @@
+person_a,person_b,similarity
+Aragaki Yuko,Nagano Mei,0.8843986392021179
+Italy Monoca,Kim Hae Ri,0.8822511434555054
+Kim Hae Ri,Lee Ju Eun,0.8688837289810181
+Kim Jung Won,Sana,0.8238030076026917
+Aragaki Yuko,Nagasawa Masami,0.8169297575950623
+Aragaki Yuko,Rena Nounen,0.8141509294509888
+Trương Hinh Dư,Vương Sở Nhiên,0.8124350905418396
+Italy Monoca,Sana,0.8064237833023071
+Tưởng Hân,Địch Lệ Nhiệt Ba,0.7890979051589966
+Nicole Kidman,Tanakashi Rin,0.7716352343559265
+Nagano Mei,Nagasawa Masami,0.7714589834213257
+Lý Gia Hân,Park Jihyun,0.769106388092041
+Cổ Lực Na Trát,Vương Sở Nhiên,0.7646650671958923
+Kim Hae Ri,Lee Ye bin,0.763577938079834
+Kim Jung Won,Lee Ju Eun,0.7628783583641052
+Trương Mẫn,Trần Đức Dung,0.7628487944602966
+Imoto Ayaka,Tanakashi Rin,0.7587908506393433
+Italy Monoca,Lee Ju Eun,0.7576805949211121
+Italy Monoca,Lee Ye bin,0.7522938847541809
+Trương Vũ Kỳ,Tôn Nhất Ninh,0.750236988067627
+Blake Lively,Choi Ye-won,0.7466176748275757
+Aragaki Yuko,Tanakashi Rin,0.7459501028060913
+Can Đình ĐÌnh,Tưởng Hân,0.7454748153686523
+Cổ Lực Na Trát,Vương Tử Thuần,0.745355486869812
+Monica Belluci,Vương Sở Nhiên,0.7442551255226135
+Vương Tử Thuần,Vạn Thiến,0.7441829442977905
+Imoto Ayaka,Nagasawa Masami,0.7422354817390442
+Trần Hồng,Tưởng Cần Cần,0.7402920722961426
+Blake Lively,Rebecca Ferguson,0.7397783398628235
+Cổ Lực Na Trát,Vạn Thiến,0.7351580262184143
+Nagano Mei,Nakamori Akina,0.7344425916671753
+Monica Belluci,Quan Hiểu Đồng,0.7334367632865906
+Lưu Tâm Du,Trương Mẫn,0.7324333786964417
+Choi Ye-won,Grace Kelly,0.7304598689079285
+Vương Sở Nhiên,Vạn Thiến,0.7300485968589783
+Aragaki Yuko,Toda Erika,0.7277507781982422
+Rena Nounen,Toda Erika,0.725448489189148
+Lý Uyển Đát,Tưởng Hân,0.724631667137146
+Lee Ju Eun,Lee Ye bin,0.7226837873458862
+Nagasawa Masami,Tanakashi Rin,0.7221789956092834
+Kim Hae Ri,Sana,0.7204527854919434
+Grace Kelly,Sana,0.7193687558174133
+Fukada Kyoko,Nakamori Akina,0.71910560131073
+Cổ Lực Na Trát,Trương Hinh Dư,0.7186017036437988
+Bae Suzy,Hashimoto Kana,0.7182245254516602
+Lee Ju Eun,Sana,0.7157559990882874
+Heidy Larmar,Hoshi Moeka,0.71449214220047
+Cổ Lực Na Trát,Trần Hồng,0.707763135433197
+Nagano Mei,Trịnh Sảng,0.7073835134506226
+Komatsu Nana,Yoshitaka Yuriko,0.707272469997406
+Nagano Mei,Tanaka Yuko,0.706830620765686
+Aragaki Yuko,Deguchi Natsuki,0.7060152888298035
+Ishihara Satomi,Sasaki Nozomi,0.7055288553237915
+Rena Nounen,Tanakashi Rin,0.7029493451118469
+Chương Nhược Nam,Mạnh Tử Nghĩa,0.7028443217277527
+Can Đình ĐÌnh,Kim Tae Hee,0.7019161581993103
+Vương Sở Nhiên,Vương Tử Thuần,0.7011811137199402
+Trương Mẫn,Trương Vũ Kỳ,0.6994244456291199
+Châu Huệ Mẫn,Toda Erika,0.6958439350128174
+Imoto Ayaka,Tanaka Yuko,0.694905698299408
+Aragaki Yuko,Trịnh Sảng,0.6940380334854126
+Lily Collins,Trương Vũ Kỳ,0.6938324570655823
+Trương Vũ Kỳ,Trần Đức Dung,0.6936813592910767
+Nagasawa Masami,Rena Nounen,0.6933041214942932
+Nagano Mei,Rena Nounen,0.6919353008270264
+Chương Nhược Nam,Trương Dư Hi,0.6916079521179199
+Trần Hồng,Vương Tử Thuần,0.6915836930274963
+Hoài Thu,Quan Hiểu Đồng,0.6912026405334473
+Can Đình ĐÌnh,Lý Uyển Đát,0.6897112727165222
+Cúc Tịch Y,Quan Hiểu Đồng,0.6893064379692078
+Chu Lâm,Vương Tổ Hiền,0.6882606744766235
+Hashimoto Kana,Kim Tae Hee,0.6869613528251648
+Fukada Kyoko,Miyazawa Rie,0.6866754293441772
+Can Đình ĐÌnh,Lily Collins,0.6850029826164246
+Trương Hinh Dư,Vương Tử Thuần,0.6837055683135986
+Lynne Frederick,Nakama Yukie,0.6828004717826843
+Trương Dư Hi,Trương Thiên Ái,0.6816847920417786
+Ayaka Konno,Tanaka Yuko,0.6814553737640381
+Nagano Mei,Tanakashi Rin,0.6808778643608093
+Megan Fox,Rebecca Ferguson,0.6792675852775574
+Deguchi Natsuki,Nagano Mei,0.6752129197120667
+Cổ Lực Na Trát,Monica Belluci,0.6749232411384583
+Mạnh Tử Nghĩa,Trương Dư Hi,0.6744641065597534
+Phạm Băng Băng,Trương Hinh Dư,0.6737037897109985
+Kim Hae Ri,Kim Jung Won,0.6710125803947449
+Hashimoto Kana,Lý Uyển Đát,0.670627772808075
+Chương Nhược Nam,Vạn Thiến,0.6702052354812622
+Dương Mịch,Ozawa Mayu,0.6700770258903503
+Bao Thượng Ân,Quan Hiểu Đồng,0.6698269844055176
+Millie Brady,Nicole Kidman,0.6697410941123962
+Nakamori Akina,Tanaka Yuko,0.66933673620224
+Sana,Tsuyu,0.6688145995140076
+Song Hye-kyo,Thu Hà,0.667896032333374
+Italy Monoca,Kim Jung Won,0.6671962738037109
+Tanakashi Rin,Toda Erika,0.666631281375885
+Ayaka Konno,Nagano Mei,0.6665068864822388
+Tanaka Yuko,Tanakashi Rin,0.6651267409324646
+Aragaki Yuko,Nakamori Akina,0.6646796464920044
+Miyazawa Rie,Vương Tổ Hiền,0.6642662286758423
+Millie Brady,Tanaka Yuko,0.6630234718322754
+Hoshi Moeka,Nakama Yukie,0.6612209677696228
+Ishihara Satomi,Trịnh Sảng,0.6611446142196655
+Angel Baby,Can Đình ĐÌnh,0.6610140800476074
+Can Đình ĐÌnh,Địch Lệ Nhiệt Ba,0.6595078706741333
+Monica Belluci,Trương Hinh Dư,0.6584107279777527
+Lee Ju Eun,Seino Nana,0.6584040522575378
+Angel Baby,Kim Ji Won,0.6581725478172302
+Ayaka Konno,Kudo Shizuka,0.656577467918396
+Mạnh Tử Nghĩa,Vạn Thiến,0.6563729643821716
+Trương Dư Hi,Ân Đào,0.6559486389160156
+Lưu Thi Thi,Tưởng Hân,0.6541169881820679
+Matsuzaka Keiko,Miyazawa Rie,0.6540740728378296
+Châu Huệ Mẫn,Han Hyo-joo,0.6533262729644775
+Cổ Lực Na Trát,Lưu Thi Thi,0.6529368758201599
+Deguchi Natsuki,Nakamori Akina,0.6514389514923096
+Jennifer Connely,Nicole Kidman,0.6512525677680969
+Aragaki Yuko,Ishihara Satomi,0.6507037281990051
+Aragaki Yuko,Tanaka Yuko,0.6503648161888123
+Deguchi Natsuki,Komatsu Nana,0.6500627994537354
+Kim Jung Won,Tống Dật,0.6499246954917908
+Aragaki Yuko,Ayaka Konno,0.6486868858337402
+Jang Gyu-ri,Jung Eun-chae,0.6485695242881775
+Can Đình ĐÌnh,Vạn Thiến,0.6478116512298584
+Italy Monoca,Jang Won-young,0.6475118398666382
+Can Đình ĐÌnh,Hashimoto Kana,0.6474318504333496
+Chu Lâm,Fukada Kyoko,0.6472048163414001
+Millie Brady,Tanakashi Rin,0.6449544429779053
+Park Jihyun,Yui Asakura,0.6449484825134277
+Jang Won-young,Lee Ye bin,0.6441805362701416
+Lưu Tâm Du,Trương Vũ Kỳ,0.6437959671020508
+Ayaka Konno,Imoto Ayaka,0.643359363079071
+Trương Tịnh Nghi,Tưởng Hân,0.6430020332336426
+Diana Kruger,Quan Hiểu Đồng,0.6429009437561035
+Komatsu Nana,Toda Erika,0.6424107551574707
+Nagasawa Masami,Tanaka Yuko,0.6393881440162659
+Bạch Băng,Han Hyo-joo,0.6391149759292603
+Deguchi Natsuki,Rena Nounen,0.6369041800498962
+Can Đình ĐÌnh,Kim Ji Won,0.6361218094825745
+Kim Jung Won,Lee Ye bin,0.6355448365211487
+Mao Hiểu Đồng,Nguyễn Ngoc Huyền,0.6351028680801392
+Mạnh Tử Nghĩa,Vương Ảnh Lộ,0.6344922184944153
+Lý Gia Hân,Trương Mẫn,0.6344857215881348
+Bạch Băng,Komatsu Nana,0.6342941522598267
+Blake Lively,Grace Kelly,0.6340955495834351
+Han Hyo-joo,Lý Gia Hân,0.6336768269538879
+Vương Ảnh Lộ,Đỗ Băng Nhạn,0.6332001686096191
+Fukada Kyoko,Nagano Mei,0.632649838924408
+Lee Ye bin,Monica Belluci,0.6314716935157776
+Keira Knightkey,Nicole Kidman,0.631291389465332
+Jang Won-young,Kim Jung Won,0.6310921907424927
+Lưu Thi Thi,Trương Tịnh Nghi,0.630530595779419
+Millie Brady,Rebecca Ferguson,0.630374550819397
+Choi Ye-won,Rebecca Ferguson,0.6289565563201904
+Lý Uyển Đát,Phương Anh Đào,0.6281554698944092
+Nicole Kidman,Toda Erika,0.6270015239715576
+Ayaka Konno,Blake Lively,0.6262213587760925
+Trương Vũ Kỳ,Ân Đào,0.6252491474151611
+Han Hyo-joo,Lâm Chí Linh,0.6243104338645935
+Diana Kruger,Thẩm My Trang,0.6241872310638428
+Kim Tae Hee,Lưu Thi Thi,0.624113142490387
+Kim Jung Won,Thầm Nguyệt,0.6241108179092407
+Ishihara Satomi,Nagano Mei,0.6238999962806702
+Keira Knightkey,Tanakashi Rin,0.6224411129951477
+Lưu Thi Thi,Vương Sở Nhiên,0.6223119497299194
+Lưu Tâm Du,Park Jihyun,0.6219117641448975
+Jang Won-young,Sana,0.6218293309211731
+Kim Yoo-jung,Đại Lộ Oa,0.6215533018112183
+Lưu Thi Thi,Địch Lệ Nhiệt Ba,0.6212430596351624
+Quan Hiểu Đồng,Vương Sở Nhiên,0.6210951209068298
+Choi Ye-won,Kudo Shizuka,0.6200055480003357
+Châu Huệ Mẫn,Lý Gia Hân,0.6196691989898682
+Blake Lively,Tanaka Yuko,0.6187809705734253
+Keira Knightkey,Nagano Mei,0.6187248826026917
+Katsumura Mika,Lâm Chí Linh,0.618451714515686
+Katsumura Mika,Tanakashi Rin,0.616180956363678
+Imada Mio,Đỗ Băng Nhạn,0.6140787601470947
+Chương Nhược Nam,Vương Tử Thuần,0.6124827861785889
+Aragaki Yuko,Sasaki Nozomi,0.6122680306434631
+Choi Ye-won,Nakamori Akina,0.6109426617622375
+Fujiyoshi Karin,Roh Jeong Un,0.6105450987815857
+Kim Ji Won,Lý Gia Hân,0.6103479266166687
+Rebecca Ferguson,Tanaka Yuko,0.6097444891929626
+Nagano Mei,Tao Tsuchiya,0.6095294952392578
+Kudo Shizuka,Seino Nana,0.6083054542541504
+Fukada Kyoko,Imoto Ayaka,0.6077471971511841
+Kim Ji Won,Trương Mẫn,0.6072844862937927
+Han Hyo-joo,Komatsu Nana,0.6071686744689941
+Komatsu Nana,Yui Asakura,0.6071592569351196
+Han Hyo-joo,Nicole Kidman,0.6067641973495483
+Hashimoto Kana,Lý Gia Hân,0.6066074371337891
+Thẩm My Trang,Điền Hi Vi,0.6065898537635803
+Can Đình ĐÌnh,Đồng Lệ Á,0.6065580248832703
+Blake Lively,Megan Fox,0.6061932444572449
+Choi Ji Woo,Trương Dư Hi,0.606055498123169
+Grace Kelly,Rebecca Ferguson,0.6057159304618835
+Nagasawa Masami,Nakamori Akina,0.6056481003761292
+Katsumura Mika,Ozawa Mayu,0.6056417226791382
+Imoto Ayaka,Nagano Mei,0.6055997610092163
+Park Jihyun,Tôn Nhất Ninh,0.6053404808044434
+Fukada Kyoko,Vương Tổ Hiền,0.6053188443183899
+Komatsu Nana,Nicole Kidman,0.6052528619766235
+Trương Tịnh Nghi,Địch Lệ Nhiệt Ba,0.604850709438324
+Chu Lâm,Miyazawa Rie,0.6047563552856445
+Kim Tae Hee,Lý Uyển Đát,0.6047461032867432
+Matsuzaka Keiko,Tanaka Yuko,0.6044986844062805
+Ayaka Konno,Nakamori Akina,0.6040979027748108
+Han Chae-young,Ishihara Satomi,0.6030867695808411
+Can Đình ĐÌnh,Lưu Thi Thi,0.602548360824585
+Ayaka Konno,Tanakashi Rin,0.6021812558174133
+Deguchi Natsuki,Fukada Kyoko,0.6019317507743835
+Aragaki Yuko,Keira Knightkey,0.6017271876335144
+Nakamori Akina,Tanakashi Rin,0.6005336046218872
+Dương Mịch,Tưởng Cần Cần,0.5989413261413574
+Han Hyo-joo,Keira Knightkey,0.5984752774238586
+Sana,Seino Nana,0.5982007384300232
+Aragaki Yuko,Fukada Kyoko,0.5977733731269836
+Lý Gia Hân,Yui Asakura,0.5977274179458618
+Diana Kruger,Heidy Larmar,0.5974631905555725
+Trương Mẫn,Yui Asakura,0.5974621772766113
+Imoto Ayaka,Miyazawa Rie,0.5968279838562012
+Thu Hà,Vương Tổ Hiền,0.5964701771736145
+Lưu Thi Thi,Trương Hinh Dư,0.5956518650054932
+Dương Mịch,Phạm Băng Băng,0.5949264168739319
+Châu Huệ Mẫn,Keira Knightkey,0.5937623381614685
+Kim Tae Hee,Lý Gia Hân,0.5935004353523254
+Yoshitaka Yuriko,Yui Asakura,0.593212902545929
+Park Jihyun,Trương Mẫn,0.5929573774337769
+Cúc Tịch Y,Diana Kruger,0.5929433107376099
+Angel Baby,Lý Uyển Đát,0.592902660369873
+Alesandrova Marina,Nakama Yukie,0.5927725434303284
+Fukada Kyoko,Nagasawa Masami,0.5926677584648132
+Imoto Ayaka,Nakamori Akina,0.5923385620117188
+Nakama Yukie,Điền Hi Vi,0.592246413230896
+Kudo Mio,Nakama Yukie,0.5920394062995911
+Hamabe Minami,Ishihara Satomi,0.5911242961883545
+Angel Baby,Triệu Lệ Dĩnh,0.5910215377807617
+Chương Nhược Nam,Cổ Lực Na Trát,0.5906664133071899
+Nakama Yukie,Shiraishi Sei,0.5902916789054871
+Kim Ji Won,Lưu Tâm Du,0.5902101397514343
+Hashimoto Kana,Tưởng Hân,0.5894200801849365
+Hoshi Moeka,Hoài Thu,0.5886818170547485
+Ayaka Konno,Rebecca Ferguson,0.5886813402175903
+Goo Yoon Young,Yoshitaka Yuriko,0.5879752039909363
+Tưởng Cần Cần,Vương Ảnh Lộ,0.5874596238136292
+Cúc Tịch Y,Monica Belluci,0.5873416066169739
+Lily Collins,Trương Mẫn,0.5870293974876404
+Megan Fox,Roh Jeong Un,0.5870077013969421
+Monica Belluci,Trương Miểu Di,0.58698970079422
+Grace Kelly,Seino Nana,0.586273193359375
+Deguchi Natsuki,Tanakashi Rin,0.5844382047653198
+Nagano Mei,Sasaki Nozomi,0.584388256072998
+Deguchi Natsuki,Tanaka Yuko,0.5841939449310303
+Keira Knightkey,Toda Erika,0.5840826630592346
+Heidy Larmar,Lý Thuần,0.5838596224784851
+Sana,Thầm Nguyệt,0.5837489366531372
+Quan Hiểu Đồng,Tưởng Cần Cần,0.5825745463371277
+Angel Baby,Vạn Thiến,0.5809179544448853
+Lý Gia Hân,Lưu Tâm Du,0.580096423625946
+Grace Kelly,Kudo Shizuka,0.5797273516654968
+Kim Jung Won,Quan Hiểu Đồng,0.5790114402770996
+Lưu Tâm Du,Ân Đào,0.5787776112556458
+Monica Belluci,Trương Dư Hi,0.5778297185897827
+Hoài Thu,Kim Jung Won,0.5774827003479004
+Anna Chipovskaya,Okada Nana,0.5774652361869812
+Ayaka Konno,Nagasawa Masami,0.577283501625061
+Diệp Bảo Ngọc,Nguyễn Ngoc Huyền,0.5771211385726929
+Lưu Thi Thi,Trần Hồng,0.5767140984535217
+Nagasawa Masami,Natsukawa Yui,0.5765300393104553
+Bao Thượng Ân,Monica Belluci,0.5765066742897034
+Han Hyo-joo,Toda Erika,0.576442301273346
+Trương Thiên Ái,Tống Dật,0.5760480165481567
+Kim Jung Won,Seino Nana,0.5754936337471008
+Cổ Lực Na Trát,Tưởng Cần Cần,0.5738020539283752
+Anya Taylor Joy,Chae Soo Bin,0.5732787847518921
+Kudo Mio,Sasaki Nozomi,0.5732298493385315
+Angel Baby,Tôn Nhất Ninh,0.5729653239250183
+Chương Nhược Nam,Vương Sở Nhiên,0.5726611614227295
+Keira Knightkey,Millie Brady,0.5723573565483093
+Heidy Larmar,Quan Hiểu Đồng,0.5720386505126953
+Bao Thượng Ân,Lưu Thi Thi,0.5710787177085876
+Im Jinnah,Kim Claudia,0.5710168480873108
+Toda Erika,Yoshitaka Yuriko,0.5709589123725891
+Hashimoto Kana,Yui Asakura,0.5691790580749512
+Châu Huệ Mẫn,Tanakashi Rin,0.5686933398246765
+Keira Knightkey,Miyazawa Rie,0.5686851739883423
+Bạch Băng,Kim Yoo-jung,0.5685293078422546
+Monica Belluci,Vương Tử Thuần,0.568346381187439
+Elina Karinova,Trương Bá Chi,0.5681326985359192
+Goo Yoon Young,Tanaka Yuko,0.568114697933197
+Phạm Băng Băng,Điền Hi Vi,0.5679718255996704
+Keira Knightkey,Yoshitaka Yuriko,0.56761234998703
+Bao Thượng Ân,Trương Tịnh Nghi,0.5675995945930481
+Goo Yoon Young,Keira Knightkey,0.5675293803215027
+Millie Brady,Yoshitaka Yuriko,0.5674683451652527
+Sana,Tống Dật,0.5671484470367432
+Lily Collins,Trần Đức Dung,0.5670837759971619
+Anna Chipovskaya,Chae Soo Bin,0.5670357942581177
+Hoài Thu,Tống Dật,0.5664832592010498
+Grace Kelly,Lee Ju Eun,0.5661212205886841
+Arimura Kasumi,Shiraishi Sei,0.5659502148628235

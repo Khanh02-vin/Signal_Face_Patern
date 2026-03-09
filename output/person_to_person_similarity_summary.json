@@ -1,0 +1,107 @@
+{
+  "person_count": 164,
+  "matrix_csv": "D:\\AI-ML\\New folder\\Signal_Face_Patern\\output\\person_to_person_similarity_matrix.csv",
+  "top_pairs_csv": "D:\\AI-ML\\New folder\\Signal_Face_Patern\\output\\person_to_person_top_pairs.csv",
+  "most_similar_pairs": [
+    {
+      "person_a": "Aragaki Yuko",
+      "person_b": "Nagano Mei",
+      "similarity": 0.8843986392021179
+    },
+    {
+      "person_a": "Italy Monoca",
+      "person_b": "Kim Hae Ri",
+      "similarity": 0.8822511434555054
+    },
+    {
+      "person_a": "Kim Hae Ri",
+      "person_b": "Lee Ju Eun",
+      "similarity": 0.8688837289810181
+    },
+    {
+      "person_a": "Kim Jung Won",
+      "person_b": "Sana",
+      "similarity": 0.8238030076026917
+    },
+    {
+      "person_a": "Aragaki Yuko",
+      "person_b": "Nagasawa Masami",
+      "similarity": 0.8169297575950623
+    },
+    {
+      "person_a": "Aragaki Yuko",
+      "person_b": "Rena Nounen",
+      "similarity": 0.8141509294509888
+    },
+    {
+      "person_a": "Trương Hinh Dư",
+      "person_b": "Vương Sở Nhiên",
+      "similarity": 0.8124350905418396
+    },
+    {
+      "person_a": "Italy Monoca",
+      "person_b": "Sana",
+      "similarity": 0.8064237833023071
+    },
+    {
+      "person_a": "Tưởng Hân",
+      "person_b": "Địch Lệ Nhiệt Ba",
+      "similarity": 0.7890979051589966
+    },
+    {
+      "person_a": "Nicole Kidman",
+      "person_b": "Tanakashi Rin",
+      "similarity": 0.7716352343559265
+    },
+    {
+      "person_a": "Nagano Mei",
+      "person_b": "Nagasawa Masami",
+      "similarity": 0.7714589834213257
+    },
+    {
+      "person_a": "Lý Gia Hân",
+      "person_b": "Park Jihyun",
+      "similarity": 0.769106388092041
+    },
+    {
+      "person_a": "Cổ Lực Na Trát",
+      "person_b": "Vương Sở Nhiên",
+      "similarity": 0.7646650671958923
+    },
+    {
+      "person_a": "Kim Hae Ri",
+      "person_b": "Lee Ye bin",
+      "similarity": 0.763577938079834
+    },
+    {
+      "person_a": "Kim Jung Won",
+      "person_b": "Lee Ju Eun",
+      "similarity": 0.7628783583641052
+    },
+    {
+      "person_a": "Trương Mẫn",
+      "person_b": "Trần Đức Dung",
+      "similarity": 0.7628487944602966
+    },
+    {
+      "person_a": "Imoto Ayaka",
+      "person_b": "Tanakashi Rin",
+      "similarity": 0.7587908506393433
+    },
+    {
+      "person_a": "Italy Monoca",
+      "person_b": "Lee Ju Eun",
+      "similarity": 0.7576805949211121
+    },
+    {
+      "person_a": "Italy Monoca",
+      "person_b": "Lee Ye bin",
+      "similarity": 0.7522938847541809
+    },
+    {
+      "person_a": "Trương Vũ Kỳ",
+      "person_b": "Tôn Nhất Ninh",
+      "similarity": 0.750236988067627
+    }
+  ]
+}

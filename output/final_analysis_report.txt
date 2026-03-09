@@ -1,0 +1,95 @@
+FINAL ANALYSIS REPORT
+================================================================================
+
+1) CORE ATTRACTION SUMMARY
+--------------------------------------------------------------------------------
+face_structure:
+  - eye_spacing_ratio_mean=0.000
+  - facial_symmetry_max=0.000
+  - jaw_ratio_median=-0.000
+  - jaw_ratio_mean=-0.000
+eye_behavior:
+  - eye_contact_max=0.000
+  - gaze_stability_median=0.000
+  - gaze_stability_mean=-0.000
+  - eye_spacing_ratio_mean=0.000
+expression:
+  - expression_speed_mean=-0.000
+  - smile_intensity_max=-0.000
+  - expression_speed_max=0.000
+  - expression_speed_std=0.000
+emotion:
+  - neutral_max=0.000
+  - neutral_std=-0.000
+  - happy_max=-0.000
+  - happy_std=-0.000
+
+2) TOP PEOPLE CLOSEST TO YOUR TYPE
+--------------------------------------------------------------------------------
+- Chương Nhược Nam: 0.234048
+- Lý Thuần: 0.191789
+- Anya Taylor Joy: 0.183437
+- Lynne Frederick: 0.182173
+- Mạnh Tử Nghĩa: 0.181448
+- Aoi Yu: 0.178270
+- Alesandrova Marina: 0.176445
+- Mai Davika: 0.174690
+- Ozawa Mayu: 0.172193
+- Tống Dật: 0.165125
+- Đại Lộ Oa: 0.161144
+- Thẩm My Trang: 0.154616
+- Quan Tuyết Doanh: 0.153058
+- Hoshi Moeka: 0.150266
+- Imada Mio: 0.145488
+- Tần Lam: 0.142840
+- Lâm Duẫn: 0.140300
+- Miyazawa Rie: 0.139346
+- Cổ Lực Na Trát: 0.137283
+- Kang Hye Won: 0.134624
+
+3) QUALITY OVERVIEW
+--------------------------------------------------------------------------------
+- Tôn Nhất Ninh: quality=1.0000, valid_ratio=1.000, avg_frames=155.00
+- Vương Tổ Hiền: quality=1.0000, valid_ratio=1.000, avg_frames=168.50
+- Trương Vũ Kỳ: quality=1.0000, valid_ratio=1.000, avg_frames=174.75
+- Yoshitaka Yuriko: quality=1.0000, valid_ratio=1.000, avg_frames=151.40
+- Seino Nana: quality=1.0000, valid_ratio=1.000, avg_frames=180.83
+- Anya Taylor Joy: quality=1.0000, valid_ratio=1.000, avg_frames=150.00
+- Natsukawa Yui: quality=1.0000, valid_ratio=1.000, avg_frames=166.67
+- Okada Nana: quality=1.0000, valid_ratio=1.000, avg_frames=229.00
+- Chu Lâm: quality=1.0000, valid_ratio=1.000, avg_frames=162.86
+- Matsuzaka Keiko: quality=1.0000, valid_ratio=1.000, avg_frames=164.17
+- Cúc Tịch Y: quality=1.0000, valid_ratio=1.000, avg_frames=202.00
+- Từ Hy Viên: quality=1.0000, valid_ratio=1.000, avg_frames=164.38
+- Tần Lam: quality=1.0000, valid_ratio=1.000, avg_frames=212.33
+- Thu Hà: quality=1.0000, valid_ratio=1.000, avg_frames=154.25
+- Trương Mẫn: quality=1.0000, valid_ratio=1.000, avg_frames=156.50
+- Trần Đức Dung: quality=1.0000, valid_ratio=1.000, avg_frames=245.67
+- Mạnh Tử Nghĩa: quality=1.0000, valid_ratio=1.000, avg_frames=172.75
+- Nguyễn Ngoc Huyền: quality=0.9966, valid_ratio=1.000, avg_frames=148.71
+- Angel Baby: quality=0.9924, valid_ratio=1.000, avg_frames=147.17
+- Nagasawa Masami: quality=0.9924, valid_ratio=1.000, avg_frames=147.14
+
+4) PERSON-TO-PERSON TOP SIMILAR PAIRS
+--------------------------------------------------------------------------------
+- person_pair_similarity_long.csv not found
+
+5) TYPE PROFILE (MANUAL INTERPRETATION)
+--------------------------------------------------------------------------------
+face_structure:
+  - balanced facial proportions
+  - high facial harmony
+  - refined clean geometry
+eye_behavior:
+  - stable eye contact
+  - calm gaze stability
+  - controlled visual focus
+expression_emotion:
+  - soft controlled expression dynamics
+  - light-to-moderate smile intensity
+  - neutral-dominant with gentle happiness
+
+Archetypes:
+- Calm-Elegant: harmonious, poised, naturally refined
+- Soft-Expressive: subtle emotional warmth with smooth expression flow
+- Confident-Neutral: understated confidence with neutral emotional baseline

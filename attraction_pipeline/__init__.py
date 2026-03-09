@@ -1,0 +1,1 @@
+"""Attraction pattern discovery pipeline."""

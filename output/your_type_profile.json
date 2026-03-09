@@ -1,0 +1,66 @@
+{
+  "profile_name": "Personal Attraction Type Profile",
+  "version": "1.0",
+  "dataset_scope": "Signal_Face_Patern/raw",
+  "core_traits": {
+    "face_structure": [
+      "balanced facial proportions",
+      "high facial harmony",
+      "refined clean geometry"
+    ],
+    "eye_behavior": [
+      "stable eye contact",
+      "calm gaze stability",
+      "controlled visual focus"
+    ],
+    "expression_emotion": [
+      "soft controlled expression dynamics",
+      "light-to-moderate smile intensity",
+      "neutral-dominant with gentle happiness"
+    ]
+  },
+  "archetypes": [
+    {
+      "label": "Calm-Elegant",
+      "description": "harmonious, poised, naturally refined"
+    },
+    {
+      "label": "Soft-Expressive",
+      "description": "subtle emotional warmth with smooth expression flow"
+    },
+    {
+      "label": "Confident-Neutral",
+      "description": "understated confidence with neutral emotional baseline"
+    }
+  ],
+  "top_representatives": {
+    "tier_A": [
+      "Chương Nhược Nam",
+      "Lý Thuần",
+      "Anya Taylor Joy",
+      "Mạnh Tử Nghĩa",
+      "Aoi Yu",
+      "Alesandrova Marina",
+      "Mai Davika",
+      "Ozawa Mayu",
+      "Tống Dật",
+      "Imada Mio"
+    ],
+    "tier_B": [
+      "Kang Hye Won",
+      "Ashahina Aya"
+    ]
+  },
+  "confidence": {
+    "overall_level": "high",
+    "reason": "Most identities have high valid_video_ratio and strong quality_score, with stable separation in similarity distribution."
+  },
+  "reuse_guideline": {
+    "for_new_dataset": [
+      "run full pipeline",
+      "compare top similarity against this profile",
+      "validate using person_quality_scores.csv",
+      "track archetype drift over time"
+    ]
+  }
+}

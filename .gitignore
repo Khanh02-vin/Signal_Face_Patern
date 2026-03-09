@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.venv/
+
+# IDE/editor
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Raw dataset and large video files
+raw/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Optional: ignore generated images if repo gets heavy
+# output/*.png
