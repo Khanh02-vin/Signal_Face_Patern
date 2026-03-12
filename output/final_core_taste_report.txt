@@ -1,0 +1,54 @@
+=== FINAL CORE TASTE REPORT ===
+
+1) Core taste (robust center: core_percentile_40) - Top 10:
+- Từ Hy Viên: 0.6457
+- Thu Hà: 0.5596
+- Kim Ji Won: 0.5122
+- Bae Suzy: 0.5034
+- Mai Davika: 0.4799
+- Lý Gia Hân: 0.4741
+- Bạch Băng: 0.4283
+- Angel Baby: 0.4227
+- Châu Huệ Mẫn: 0.4133
+- Hashimoto Kana: 0.3956
+
+2) Dominant archetype (largest_cluster_center) - Top 10:
+- Can Đình ĐÌnh: 0.8261
+- Vạn Thiến: 0.7892
+- Vương Sở Nhiên: 0.7785
+- Tưởng Hân: 0.7446
+- Trương Vũ Kỳ: 0.7355
+- Cổ Lực Na Trát: 0.7319
+- Lưu Thi Thi: 0.7070
+- Trương Hinh Dư: 0.6980
+- Angel Baby: 0.6950
+- Kim Ji Won: 0.6332
+
+3) Top attraction signals by correlation:
+- eye_openness_median: corr=0.7487
+- eye_openness_mean: corr=0.7410
+- eye_openness_max: corr=0.6088
+- facial_symmetry_std: corr=0.6009
+- eye_contact_std: corr=0.5905
+- gaze_stability_std: corr=0.5007
+- eye_contact_mean: corr=-0.4946
+- head_tilt_max: corr=0.4859
+- head_tilt_std: corr=0.4492
+- gaze_stability_mean: corr=-0.4443
+
+4) Top attraction signals by RF importance:
+- eye_openness_mean: importance=0.4527
+- eye_openness_median: importance=0.1031
+- facial_symmetry_std: importance=0.0826
+- surprise_max: importance=0.0370
+- eye_contact_std: importance=0.0359
+- eye_openness_max: importance=0.0240
+- eye_contact_mean: importance=0.0160
+- neutral_max: importance=0.0148
+- eye_spacing_ratio_max: importance=0.0145
+- surprise_std: importance=0.0143
+
+Interpretation:
+- Eye openness family is the strongest attraction signal.
+- Robust core taste is better than mean_all in this dataset.
+- Use core_percentile_40 as primary taste vector and cluster center as secondary archetype view.

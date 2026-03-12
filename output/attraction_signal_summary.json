@@ -1,0 +1,115 @@
+{
+  "top_correlation_features": [
+    {
+      "feature": "eye_openness_median",
+      "correlation": 0.7486529915027361,
+      "abs_correlation": 0.7486529915027361
+    },
+    {
+      "feature": "eye_openness_mean",
+      "correlation": 0.7409638164367094,
+      "abs_correlation": 0.7409638164367094
+    },
+    {
+      "feature": "eye_openness_max",
+      "correlation": 0.6088361832011009,
+      "abs_correlation": 0.6088361832011009
+    },
+    {
+      "feature": "facial_symmetry_std",
+      "correlation": 0.6008726486482638,
+      "abs_correlation": 0.6008726486482638
+    },
+    {
+      "feature": "eye_contact_std",
+      "correlation": 0.5905033553710571,
+      "abs_correlation": 0.5905033553710571
+    },
+    {
+      "feature": "gaze_stability_std",
+      "correlation": 0.5006514833268249,
+      "abs_correlation": 0.5006514833268249
+    },
+    {
+      "feature": "eye_contact_mean",
+      "correlation": -0.49455272555768853,
+      "abs_correlation": 0.49455272555768853
+    },
+    {
+      "feature": "head_tilt_max",
+      "correlation": 0.48587757168438933,
+      "abs_correlation": 0.48587757168438933
+    },
+    {
+      "feature": "head_tilt_std",
+      "correlation": 0.449196999765547,
+      "abs_correlation": 0.449196999765547
+    },
+    {
+      "feature": "gaze_stability_mean",
+      "correlation": -0.4442882095061216,
+      "abs_correlation": 0.4442882095061216
+    },
+    {
+      "feature": "surprise_max",
+      "correlation": 0.41109191630228425,
+      "abs_correlation": 0.41109191630228425
+    },
+    {
+      "feature": "facial_symmetry_mean",
+      "correlation": -0.37969974763433584,
+      "abs_correlation": 0.37969974763433584
+    }
+  ],
+  "top_importance_features": [
+    {
+      "feature": "eye_openness_mean",
+      "importance": 0.4527292096623923
+    },
+    {
+      "feature": "eye_openness_median",
+      "importance": 0.10307007823304261
+    },
+    {
+      "feature": "facial_symmetry_std",
+      "importance": 0.08255298450708085
+    },
+    {
+      "feature": "surprise_max",
+      "importance": 0.03698016570677591
+    },
+    {
+      "feature": "eye_contact_std",
+      "importance": 0.03592685839340554
+    },
+    {
+      "feature": "eye_openness_max",
+      "importance": 0.023974985017642014
+    },
+    {
+      "feature": "eye_contact_mean",
+      "importance": 0.016012157708340538
+    },
+    {
+      "feature": "neutral_max",
+      "importance": 0.014769821701730818
+    },
+    {
+      "feature": "eye_spacing_ratio_max",
+      "importance": 0.014516155002148154
+    },
+    {
+      "feature": "surprise_std",
+      "importance": 0.014334820201327498
+    },
+    {
+      "feature": "gaze_stability_std",
+      "importance": 0.012811476668997583
+    },
+    {
+      "feature": "eye_spacing_ratio_std",
+      "importance": 0.012375847031216015
+    }
+  ],
+  "notes": "Correlation shows linear relation direction; RF importance shows nonlinear predictive contribution."
+}

@@ -1,0 +1,598 @@
+{
+  "mean_all": {
+    "top_people": [
+      {
+        "person": "Chương Nhược Nam",
+        "similarity": 0.23404784500598907
+      },
+      {
+        "person": "Lý Thuần",
+        "similarity": 0.1917891949415207
+      },
+      {
+        "person": "Anya Taylor Joy",
+        "similarity": 0.18343697488307953
+      },
+      {
+        "person": "Lynne Frederick",
+        "similarity": 0.18217261135578156
+      },
+      {
+        "person": "Mạnh Tử Nghĩa",
+        "similarity": 0.18144837021827698
+      },
+      {
+        "person": "Aoi Yu",
+        "similarity": 0.17827048897743225
+      },
+      {
+        "person": "Alesandrova Marina",
+        "similarity": 0.17644543945789337
+      },
+      {
+        "person": "Mai Davika",
+        "similarity": 0.17469006776809692
+      },
+      {
+        "person": "Ozawa Mayu",
+        "similarity": 0.17219293117523193
+      },
+      {
+        "person": "Tống Dật",
+        "similarity": 0.16512548923492432
+      }
+    ],
+    "top_features": [
+      {
+        "feature": "eye_contact_max",
+        "value": 1.187440830108244e-05
+      },
+      {
+        "feature": "gaze_stability_median",
+        "value": 1.070557573257247e-05
+      },
+      {
+        "feature": "gaze_stability_mean",
+        "value": -2.9438879209919833e-06
+      },
+      {
+        "feature": "eye_spacing_ratio_mean",
+        "value": 2.5702686343720416e-06
+      },
+      {
+        "feature": "eye_contact_median",
+        "value": -2.3725556275167037e-06
+      },
+      {
+        "feature": "facial_symmetry_max",
+        "value": 2.0192890133330366e-06
+      },
+      {
+        "feature": "eye_contact_mean",
+        "value": -2.0003899408038706e-06
+      },
+      {
+        "feature": "jaw_ratio_median",
+        "value": -1.99457485905441e-06
+      },
+      {
+        "feature": "jaw_ratio_mean",
+        "value": -1.9073486328125e-06
+      },
+      {
+        "feature": "eye_spacing_ratio_median",
+        "value": 1.1281268825769075e-06
+      },
+      {
+        "feature": "eye_spacing_ratio_max",
+        "value": -1.1164967190779862e-06
+      },
+      {
+        "feature": "jaw_ratio_max",
+        "value": 6.818189604018698e-07
+      }
+    ],
+    "preference_vector": {
+      "expression_speed_max": 1.4828472671979398e-07,
+      "expression_speed_mean": -2.384185791015625e-07,
+      "expression_speed_median": -8.722631150703819e-08,
+      "expression_speed_std": 1.1339420069589323e-07,
+      "eye_contact_max": 1.187440830108244e-05,
+      "eye_contact_mean": -2.0003899408038706e-06,
+      "eye_contact_median": -2.3725556275167037e-06,
+      "eye_contact_std": -2.1515822368201043e-07,
+      "eye_openness_max": -6.396596319291348e-08,
+      "eye_openness_mean": 8.795319672572077e-08,
+      "eye_openness_median": -1.2847708319441153e-07,
+      "eye_openness_std": 1.8317524563826737e-07,
+      "eye_spacing_ratio_max": -1.1164967190779862e-06,
+      "eye_spacing_ratio_mean": 2.5702686343720416e-06,
+      "eye_spacing_ratio_median": 1.1281268825769075e-06,
+      "eye_spacing_ratio_std": -3.779806689863108e-08,
+      "face_width_height_ratio_max": -2.2824217182915163e-07,
+      "face_width_height_ratio_mean": 2.8857371603407955e-07,
+      "face_width_height_ratio_median": 1.7590639345144155e-07,
+      "face_width_height_ratio_std": 5.815087433802546e-08,
+      "facial_symmetry_max": 2.0192890133330366e-06,
+      "facial_symmetry_mean": 7.850368177741984e-08,
+      "facial_symmetry_median": -4.76837158203125e-07,
+      "facial_symmetry_std": 1.773601638888067e-07,
+      "gaze_stability_max": 0.0,
+      "gaze_stability_mean": -2.9438879209919833e-06,
+      "gaze_stability_median": 1.070557573257247e-05,
+      "gaze_stability_std": 3.27098659269609e-09,
+      "happy_max": -3.4599770515342243e-07,
+      "happy_mean": 5.815087433802546e-08,
+      "happy_median": -2.0352805663037543e-08,
+      "happy_std": -1.7517950823275896e-07,
+      "head_tilt_max": -9.013385238176852e-08,
+      "head_tilt_mean": -9.231450803781627e-08,
+      "head_tilt_median": 5.6697100347946616e-08,
+      "head_tilt_std": -7.995745221478501e-08,
+      "jaw_ratio_max": 6.818189604018698e-07,
+      "jaw_ratio_mean": -1.9073486328125e-06,
+      "jaw_ratio_median": -1.99457485905441e-06,
+      "jaw_ratio_std": -2.733090980200359e-07,
+      "neutral_max": 6.512897812172014e-07,
+      "neutral_mean": 1.6572998617903067e-07,
+      "neutral_median": -5.74239855666292e-08,
+      "neutral_std": -5.000974852009676e-07,
+      "processed_frames": -1.1630174157062356e-08,
+      "smile_intensity_max": -1.9771296422277373e-07,
+      "smile_intensity_mean": 2.3260348314124712e-08,
+      "smile_intensity_median": 2.616789274156872e-08,
+      "smile_intensity_std": -2.3260348314124712e-08,
+      "surprise_max": -1.5700736355483969e-07,
+      "surprise_mean": 2.907543716901273e-08,
+      "surprise_median": 5.815087078531178e-09,
+      "surprise_std": -4.6520696628249425e-08
+    }
+  },
+  "weighted_mean": {
+    "top_people": [
+      {
+        "person": "Trần Đức Dung",
+        "similarity": 0.7385156154632568
+      },
+      {
+        "person": "Tần Lam",
+        "similarity": 0.6551201939582825
+      },
+      {
+        "person": "Từ Hy Viên",
+        "similarity": 0.651209831237793
+      },
+      {
+        "person": "Vương Tổ Hiền",
+        "similarity": 0.5749657154083252
+      },
+      {
+        "person": "Trương Mẫn",
+        "similarity": 0.4953742027282715
+      },
+      {
+        "person": "Goo Yoon Young",
+        "similarity": 0.47460314631462097
+      },
+      {
+        "person": "Thu Hà",
+        "similarity": 0.4527045488357544
+      },
+      {
+        "person": "Kim Ji Won",
+        "similarity": 0.44403883814811707
+      },
+      {
+        "person": "Lý Gia Hân",
+        "similarity": 0.438295841217041
+      },
+      {
+        "person": "Matsuzaka Keiko",
+        "similarity": 0.43086421489715576
+      }
+    ],
+    "top_features": [
+      {
+        "feature": "processed_frames",
+        "value": 0.05981789529323578
+      },
+      {
+        "feature": "surprise_max",
+        "value": 0.022642619907855988
+      },
+      {
+        "feature": "eye_spacing_ratio_max",
+        "value": 0.019368303939700127
+      },
+      {
+        "feature": "head_tilt_max",
+        "value": 0.016276312991976738
+      },
+      {
+        "feature": "eye_openness_max",
+        "value": 0.015064522624015808
+      },
+      {
+        "feature": "jaw_ratio_max",
+        "value": 0.014744751155376434
+      },
+      {
+        "feature": "neutral_max",
+        "value": 0.013469778001308441
+      },
+      {
+        "feature": "expression_speed_max",
+        "value": 0.011842595413327217
+      },
+      {
+        "feature": "facial_symmetry_std",
+        "value": 0.01115526631474495
+      },
+      {
+        "feature": "eye_contact_mean",
+        "value": -0.010752059519290924
+      },
+      {
+        "feature": "eye_contact_median",
+        "value": -0.010297887027263641
+      },
+      {
+        "feature": "eye_contact_max",
+        "value": 0.010172955691814423
+      }
+    ],
+    "preference_vector": {
+      "expression_speed_max": 0.011842595413327217,
+      "expression_speed_mean": -0.009675458073616028,
+      "expression_speed_median": -0.009955242276191711,
+      "expression_speed_std": -0.005986914038658142,
+      "eye_contact_max": 0.010172955691814423,
+      "eye_contact_mean": -0.010752059519290924,
+      "eye_contact_median": -0.010297887027263641,
+      "eye_contact_std": 0.00908268615603447,
+      "eye_openness_max": 0.015064522624015808,
+      "eye_openness_mean": 0.0075836703181266785,
+      "eye_openness_median": 0.008350463584065437,
+      "eye_openness_std": 0.009707879275083542,
+      "eye_spacing_ratio_max": 0.019368303939700127,
+      "eye_spacing_ratio_mean": -0.002345174551010132,
+      "eye_spacing_ratio_median": -0.002788655459880829,
+      "eye_spacing_ratio_std": 0.003159739077091217,
+      "face_width_height_ratio_max": 0.00422635767608881,
+      "face_width_height_ratio_mean": 0.00031316839158535004,
+      "face_width_height_ratio_median": 0.0005273171700537205,
+      "face_width_height_ratio_std": 0.0024237260222434998,
+      "facial_symmetry_max": 0.01003484521061182,
+      "facial_symmetry_mean": -0.008200094103813171,
+      "facial_symmetry_median": -0.007955580949783325,
+      "facial_symmetry_std": 0.01115526631474495,
+      "gaze_stability_max": 0.0,
+      "gaze_stability_mean": 0.002498125657439232,
+      "gaze_stability_median": 0.005138486623764038,
+      "gaze_stability_std": -0.0005670259706676006,
+      "happy_max": 0.009301908314228058,
+      "happy_mean": -0.005179980769753456,
+      "happy_median": -0.004433482885360718,
+      "happy_std": -0.002666682004928589,
+      "head_tilt_max": 0.016276312991976738,
+      "head_tilt_mean": 0.00499643012881279,
+      "head_tilt_median": 0.002681998535990715,
+      "head_tilt_std": 0.008588539436459541,
+      "jaw_ratio_max": 0.014744751155376434,
+      "jaw_ratio_mean": -0.006217502057552338,
+      "jaw_ratio_median": -0.006170235574245453,
+      "jaw_ratio_std": 0.005560789257287979,
+      "neutral_max": 0.013469778001308441,
+      "neutral_mean": -0.0034313276410102844,
+      "neutral_median": -0.00610730703920126,
+      "neutral_std": -6.748735904693604e-05,
+      "processed_frames": 0.05981789529323578,
+      "smile_intensity_max": 0.003156013786792755,
+      "smile_intensity_mean": -0.003928277641534805,
+      "smile_intensity_median": -0.004021991044282913,
+      "smile_intensity_std": -0.0003822222352027893,
+      "surprise_max": 0.022642619907855988,
+      "surprise_mean": 0.004178386181592941,
+      "surprise_median": 0.0011963993310928345,
+      "surprise_std": 0.00871826708316803
+    }
+  },
+  "core_percentile_40": {
+    "top_people": [
+      {
+        "person": "Từ Hy Viên",
+        "similarity": 0.6457189321517944
+      },
+      {
+        "person": "Thu Hà",
+        "similarity": 0.5596161484718323
+      },
+      {
+        "person": "Kim Ji Won",
+        "similarity": 0.5121995210647583
+      },
+      {
+        "person": "Bae Suzy",
+        "similarity": 0.5033559203147888
+      },
+      {
+        "person": "Mai Davika",
+        "similarity": 0.47990530729293823
+      },
+      {
+        "person": "Lý Gia Hân",
+        "similarity": 0.4740845263004303
+      },
+      {
+        "person": "Bạch Băng",
+        "similarity": 0.42825984954833984
+      },
+      {
+        "person": "Angel Baby",
+        "similarity": 0.4226607382297516
+      },
+      {
+        "person": "Châu Huệ Mẫn",
+        "similarity": 0.413286030292511
+      },
+      {
+        "person": "Hashimoto Kana",
+        "similarity": 0.39564386010169983
+      }
+    ],
+    "top_features": [
+      {
+        "feature": "facial_symmetry_max",
+        "value": 0.235688716173172
+      },
+      {
+        "feature": "eye_openness_median",
+        "value": 0.21733719110488892
+      },
+      {
+        "feature": "eye_openness_mean",
+        "value": 0.20898912847042084
+      },
+      {
+        "feature": "eye_openness_max",
+        "value": 0.19796282052993774
+      },
+      {
+        "feature": "surprise_max",
+        "value": 0.19429317116737366
+      },
+      {
+        "feature": "eye_contact_max",
+        "value": 0.18526628613471985
+      },
+      {
+        "feature": "neutral_max",
+        "value": 0.1789175420999527
+      },
+      {
+        "feature": "facial_symmetry_std",
+        "value": 0.16161666810512543
+      },
+      {
+        "feature": "happy_max",
+        "value": 0.15149158239364624
+      },
+      {
+        "feature": "eye_contact_std",
+        "value": 0.14242292940616608
+      },
+      {
+        "feature": "expression_speed_median",
+        "value": -0.14000576734542847
+      },
+      {
+        "feature": "smile_intensity_median",
+        "value": -0.13280914723873138
+      }
+    ],
+    "preference_vector": {
+      "expression_speed_max": 0.055427975952625275,
+      "expression_speed_mean": -0.1006370559334755,
+      "expression_speed_median": -0.14000576734542847,
+      "expression_speed_std": 0.0010691395727917552,
+      "eye_contact_max": 0.18526628613471985,
+      "eye_contact_mean": -0.11386074125766754,
+      "eye_contact_median": -0.08752787858247757,
+      "eye_contact_std": 0.14242292940616608,
+      "eye_openness_max": 0.19796282052993774,
+      "eye_openness_mean": 0.20898912847042084,
+      "eye_openness_median": 0.21733719110488892,
+      "eye_openness_std": -0.010421999730169773,
+      "eye_spacing_ratio_max": 0.06342858821153641,
+      "eye_spacing_ratio_mean": 0.03849947080016136,
+      "eye_spacing_ratio_median": 0.0504857562482357,
+      "eye_spacing_ratio_std": -0.0006252256571315229,
+      "face_width_height_ratio_max": -0.06097247451543808,
+      "face_width_height_ratio_mean": -0.05646619200706482,
+      "face_width_height_ratio_median": -0.064642995595932,
+      "face_width_height_ratio_std": -0.11665109544992447,
+      "facial_symmetry_max": 0.235688716173172,
+      "facial_symmetry_mean": -0.044216614216566086,
+      "facial_symmetry_median": -0.03713131323456764,
+      "facial_symmetry_std": 0.16161666810512543,
+      "gaze_stability_max": 0.0,
+      "gaze_stability_mean": -0.06378881633281708,
+      "gaze_stability_median": 2.9468536013155244e-05,
+      "gaze_stability_std": 0.11573487520217896,
+      "happy_max": 0.15149158239364624,
+      "happy_mean": 0.03607454150915146,
+      "happy_median": -0.10981243848800659,
+      "happy_std": 0.07780849188566208,
+      "head_tilt_max": 0.0465223602950573,
+      "head_tilt_mean": -0.013529634103178978,
+      "head_tilt_median": -0.06653381139039993,
+      "head_tilt_std": 0.03382033482193947,
+      "jaw_ratio_max": -0.13178928196430206,
+      "jaw_ratio_mean": -0.036589011549949646,
+      "jaw_ratio_median": -0.015117357484996319,
+      "jaw_ratio_std": -0.07513944804668427,
+      "neutral_max": 0.1789175420999527,
+      "neutral_mean": -0.021975351497530937,
+      "neutral_median": -0.08147931098937988,
+      "neutral_std": 0.0785570740699768,
+      "processed_frames": 0.04616701602935791,
+      "smile_intensity_max": 0.019549688324332237,
+      "smile_intensity_mean": -0.08759935200214386,
+      "smile_intensity_median": -0.13280914723873138,
+      "smile_intensity_std": 0.0011185132898390293,
+      "surprise_max": 0.19429317116737366,
+      "surprise_mean": -0.0011970079503953457,
+      "surprise_median": -0.08738254755735397,
+      "surprise_std": 0.08070572465658188
+    }
+  },
+  "largest_cluster_center": {
+    "top_people": [
+      {
+        "person": "Can Đình ĐÌnh",
+        "similarity": 0.8261220455169678
+      },
+      {
+        "person": "Vạn Thiến",
+        "similarity": 0.7891674637794495
+      },
+      {
+        "person": "Vương Sở Nhiên",
+        "similarity": 0.7785276174545288
+      },
+      {
+        "person": "Tưởng Hân",
+        "similarity": 0.7445676922798157
+      },
+      {
+        "person": "Trương Vũ Kỳ",
+        "similarity": 0.7354697585105896
+      },
+      {
+        "person": "Cổ Lực Na Trát",
+        "similarity": 0.7319211959838867
+      },
+      {
+        "person": "Lưu Thi Thi",
+        "similarity": 0.7069680094718933
+      },
+      {
+        "person": "Trương Hinh Dư",
+        "similarity": 0.6980253458023071
+      },
+      {
+        "person": "Angel Baby",
+        "similarity": 0.6950031518936157
+      },
+      {
+        "person": "Kim Ji Won",
+        "similarity": 0.6332160234451294
+      }
+    ],
+    "top_features": [
+      {
+        "feature": "facial_symmetry_mean",
+        "value": -0.8813023567199707
+      },
+      {
+        "feature": "facial_symmetry_median",
+        "value": -0.8564479947090149
+      },
+      {
+        "feature": "smile_intensity_std",
+        "value": -0.782123327255249
+      },
+      {
+        "feature": "smile_intensity_mean",
+        "value": -0.7599960565567017
+      },
+      {
+        "feature": "smile_intensity_max",
+        "value": -0.7372158169746399
+      },
+      {
+        "feature": "facial_symmetry_std",
+        "value": 0.7188194394111633
+      },
+      {
+        "feature": "eye_contact_mean",
+        "value": -0.6927539706230164
+      },
+      {
+        "feature": "eye_contact_std",
+        "value": 0.6626871824264526
+      },
+      {
+        "feature": "smile_intensity_median",
+        "value": -0.6393097639083862
+      },
+      {
+        "feature": "eye_contact_median",
+        "value": -0.6056761741638184
+      },
+      {
+        "feature": "face_width_height_ratio_max",
+        "value": 0.5555341243743896
+      },
+      {
+        "feature": "gaze_stability_std",
+        "value": 0.5476855635643005
+      }
+    ],
+    "preference_vector": {
+      "expression_speed_max": -0.4397038221359253,
+      "expression_speed_mean": -0.5435030460357666,
+      "expression_speed_median": -0.4278922379016876,
+      "expression_speed_std": -0.5098896622657776,
+      "eye_contact_max": -0.17594866454601288,
+      "eye_contact_mean": -0.6927539706230164,
+      "eye_contact_median": -0.6056761741638184,
+      "eye_contact_std": 0.6626871824264526,
+      "eye_openness_max": 0.2045259177684784,
+      "eye_openness_mean": 0.17289704084396362,
+      "eye_openness_median": 0.14405475556850433,
+      "eye_openness_std": -0.0012840155977755785,
+      "eye_spacing_ratio_max": -0.010101916268467903,
+      "eye_spacing_ratio_mean": -0.16905638575553894,
+      "eye_spacing_ratio_median": -0.1309867799282074,
+      "eye_spacing_ratio_std": 0.31763771176338196,
+      "face_width_height_ratio_max": 0.5555341243743896,
+      "face_width_height_ratio_mean": 0.502745509147644,
+      "face_width_height_ratio_median": 0.5079312920570374,
+      "face_width_height_ratio_std": 0.5432711243629456,
+      "facial_symmetry_max": -0.1761275976896286,
+      "facial_symmetry_mean": -0.8813023567199707,
+      "facial_symmetry_median": -0.8564479947090149,
+      "facial_symmetry_std": 0.7188194394111633,
+      "gaze_stability_max": 0.0,
+      "gaze_stability_mean": -0.4870379865169525,
+      "gaze_stability_median": -0.3943408727645874,
+      "gaze_stability_std": 0.5476855635643005,
+      "happy_max": -0.09904336929321289,
+      "happy_mean": -0.4110814929008484,
+      "happy_median": -0.31708040833473206,
+      "happy_std": -0.40291330218315125,
+      "head_tilt_max": -0.09065328538417816,
+      "head_tilt_mean": -0.0670437440276146,
+      "head_tilt_median": -0.021149132400751114,
+      "head_tilt_std": -0.1215767115354538,
+      "jaw_ratio_max": -0.13650184869766235,
+      "jaw_ratio_mean": -0.4681033492088318,
+      "jaw_ratio_median": -0.5003710985183716,
+      "jaw_ratio_std": 0.12958911061286926,
+      "neutral_max": 0.10795973986387253,
+      "neutral_mean": 0.35623684525489807,
+      "neutral_median": 0.25359493494033813,
+      "neutral_std": 0.34197038412094116,
+      "processed_frames": 0.0626758262515068,
+      "smile_intensity_max": -0.7372158169746399,
+      "smile_intensity_mean": -0.7599960565567017,
+      "smile_intensity_median": -0.6393097639083862,
+      "smile_intensity_std": -0.782123327255249,
+      "surprise_max": 0.07619666308164597,
+      "surprise_mean": 0.10105583816766739,
+      "surprise_median": 0.14728277921676636,
+      "surprise_std": 0.0699816420674324
+    }
+  }
+}

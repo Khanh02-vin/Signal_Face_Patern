@@ -1,191 +1,136 @@
-Signal Face Pattern
-Overview
+# Signal Face Pattern
 
-Signal Face Pattern is a computer vision pipeline designed to analyze visual attraction signals from videos or images.
-The system extracts facial structure, behavioral signals, and emotional patterns, then builds a preference model to discover common patterns among people that the user finds attractive.
+## Tổng quan dự án
+Signal Face Pattern là một dự án **AI/ML** tập trung vào việc trích xuất **facial signals** từ video, tổng hợp thành **person profile**, và phân tích **attraction pattern** dựa trên các đặc trưng hình học, hành vi và cảm xúc khuôn mặt. Pipeline hỗ trợ xử lý dữ liệu video theo thư mục người dùng, tính toán **feature statistics**, sau đó thực hiện **clustering** và tạo báo cáo phân tích.
 
-The pipeline processes raw media files, computes facial features, aggregates statistics, and produces ranking and clustering reports.
+## Mục tiêu chính
+Giải quyết bài toán: **tự động hoá việc phân tích pattern hấp dẫn dựa trên tín hiệu khuôn mặt từ video**, bao gồm mức độ tương đồng, nhóm cụm và tóm tắt đặc trưng nổi bật.
 
-Main capabilities
+## Công nghệ sử dụng
+- **Python**
+- **OpenCV** (video processing)
+- **MediaPipe** (face mesh landmarks)
+- **DeepFace** (emotion analysis)
+- **NumPy / Pandas**
+- **scikit-learn** (clustering, PCA)
+- **Matplotlib** (visualization)
 
-Extract facial structure features
+## Tính năng chính
+- Trích xuất **facial geometry** và **behavior signals** từ video
+- Tổng hợp **person profile** và đánh giá **quality score**
+- Phân tích **preference vector** và **similarity scores**
+- **Clustering** bằng KMeans/DBSCAN/auto_kmeans
+- Xuất báo cáo JSON/CSV và biểu đồ (Radar, PCA)
 
-Analyze facial behavior and expression signals
+## Cài đặt
+### Yêu cầu
+- Python 3.9+
 
-Detect emotional patterns
+### Cài dependencies
 
-Build preference vectors
+```bash
+pip install -r requirements.txt
+```
 
-Compute similarity rankings
+## Hướng dẫn sử dụng
+### 1) Chuẩn bị dataset
+Tổ chức thư mục `raw/` theo cấu trúc **person-level**:
 
-Generate clustering insights
+```
+raw/
+├── person_01/
+│   ├── video_01.mp4
+│   ├── video_02.mp4
+├── person_02/
+│   ├── video_01.mp4
+│   ├── video_02.mp4
+```
 
-Produce final attraction reports
+### 2) Chạy pipeline
+Chỉnh sửa đường dẫn trong `run_attraction_pipeline.py` nếu cần, sau đó chạy:
 
-Input data is stored in raw/ and results are written to output/.
+```bash
+python run_attraction_pipeline.py
+```
 
-Project Structure
-Signal-Face-Pattern/
-│
+### 3) Kết quả đầu ra
+Các file sẽ được ghi trong thư mục `output/`, bao gồm:
+- `attraction_report.json`
+- `similarity_scores.csv`
+- `person_quality_scores.csv`
+- `attraction_radar.png`
+- `pca_person_vectors.png`
+
+## Cấu trúc dự án
+
+```
+Signal_Face_Patern/
 ├── attraction_pipeline/
+│   ├── __init__.py
+│   ├── analysis.py
 │   ├── config.py
 │   ├── dataset_io.py
-│   ├── video_features.py
-│   ├── analysis.py
-│   └── pipeline.py
-│
-├── raw/
-│   └── (input videos or images)
-│
+│   ├── pipeline.py
+│   └── video_features.py
+├── lib/
+│   ├── bindings/
+│   ├── tom-select/
+│   └── vis-9.1.2/
 ├── output/
-│   └── (generated reports and rankings)
-│
-├── run_attraction_pipeline.py
+├── raw/
+├── attraction_signal_analysis.py
 ├── build_ensemble_ranking.py
+├── build_final_core_taste_report
 ├── dashboard.py
-├── requirements.txt
-└── README.md
-Folder description
+├── person_to_person_similarity.py
+├── preference_benchmark.py
+├── preference_methods.py
+├── preference_strategies.py
+├── run_attraction_pipeline.py
+└── requirements.txt
+```
 
-attraction_pipeline/
-Core pipeline modules.
+## Ví dụ code
+Ví dụ chạy pipeline đơn giản:
 
-File	Description
-config.py	Pipeline configuration
-dataset_io.py	Dataset loading and scanning
-video_features.py	Feature extraction from videos
-analysis.py	Similarity, clustering, and preference modeling
-pipeline.py	Main pipeline orchestration
+```python
+from pathlib import Path
+from attraction_pipeline.config import PipelineConfig
+from attraction_pipeline.pipeline import run_pipeline
 
-raw/
-Input dataset containing videos or images.
+config = PipelineConfig(
+    dataset_root=Path("raw"),
+    output_root=Path("output"),
+    frame_step=5,
+    min_face_confidence=0.5,
+    max_frames_per_video=None,
+    cluster_k=3,
+    cluster_method="auto_kmeans",
+    dbscan_eps=1.2,
+    dbscan_min_samples=3,
+    use_multiprocessing=False,
+)
 
-Example:
+run_pipeline(config)
+```
 
-raw/
-   person_001/
-       video1.mp4
-       video2.mp4
-   person_002/
-       video1.mp4
+## Dataset
+Dự án sử dụng **video dataset** được sắp theo từng thư mục người dùng. Mỗi thư mục chứa nhiều video của cùng một người. Pipeline sẽ xử lý từng video, trích xuất **frame-level signals** và tổng hợp thành **person-level profile**.
 
-output/
-Generated results such as:
+## Model Architecture (Pipeline Architecture)
+Pipeline chính gồm các bước:
+1. **Video Feature Extraction**: dùng MediaPipe để lấy face landmarks, OpenCV để đọc video, DeepFace để suy luận emotion.
+2. **Aggregation**: tổng hợp feature thống kê (mean, std, median, max) theo video và theo người.
+3. **Analysis & Clustering**: chuẩn hoá, tạo preference vector, cosine similarity, clustering, PCA.
+4. **Reporting**: xuất JSON/CSV và visualization.
 
-output/
-   preference_strategy_similarity_scores.csv
-   ensemble_taste_ranking.csv
-   ensemble_taste_top50.csv
-Installation
-1. Create virtual environment
-python -m venv venv
-2. Activate environment
+## Kết quả/Outputs
+- **Attraction report**: tổng hợp preference vector, similarity score, cluster assignment.
+- **CSV output**: chất lượng dữ liệu và điểm tương đồng.
+- **Visualization**: radar chart và PCA scatter plot.
 
-Windows
-
-venv\Scripts\activate
-
-macOS / Linux
-
-source venv/bin/activate
-3. Install dependencies
-pip install -r requirements.txt
-Running the Pipeline
-
-Edit dataset paths if necessary in:
-
-run_attraction_pipeline.py
-
-Then run:
-
-python run_attraction_pipeline.py
-
-The pipeline will:
-
-Scan dataset
-
-Process videos
-
-Extract facial features
-
-Compute statistics
-
-Generate similarity scores
-
-Save results to output/
-
-Build Ensemble Ranking
-
-After generating similarity scores, run:
-
-python build_ensemble_ranking.py
-
-This script combines multiple scoring strategies into a final ranking.
-
-Output files:
-
-output/ensemble_taste_ranking.csv
-output/ensemble_taste_top50.csv
-Configuration
-
-Important parameters are located in:
-
-attraction_pipeline/config.py
-
-Key settings include:
-
-dataset paths
-
-frame sampling rate
-
-clustering parameters
-
-similarity strategies
-
-multiprocessing options
-
-Example:
-
-use_multiprocessing = True
-max_workers = 4
-frame_skip = 5
-Performance Notes
-
-For large datasets:
-
-Enable multiprocessing
-
-Adjust max_workers based on CPU cores
-
-Increase frame_skip to reduce computation
-
-Example recommendation:
-
-Dataset size: 1000+ videos
-Workers: 4–8
-Frame skip: 5–10
-Output Examples
-
-Example ranking output:
-
-person_id | similarity_score
-----------|------------------
-person_042 | 0.93
-person_017 | 0.91
-person_109 | 0.88
-
-This represents how closely each person matches the learned attraction preference pattern.
-
-Optional Dashboard
-
-If available, run:
-
-python dashboard.py
-
-to visualize:
-
-similarity rankings
-
-clustering results
-
-preference patterns
+## Future Improvements
+- Bổ sung **temporal modeling** (LSTM/Transformer) cho sequence features
+- Tối ưu **speed** với batch processing và GPU acceleration
+- Thêm module **face quality filtering** nâng cao
+- Cải thiện dashboard và reporting trực quan

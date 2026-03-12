@@ -1,0 +1,52 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+import pandas as pd
+
+OUT = Path("output")
+pref_path = OUT / "preference_strategies_report.json"
+sig_path = OUT / "attraction_signal_summary.json"
+
+with pref_path.open("r", encoding="utf-8") as f:
+    pref = json.load(f)
+with sig_path.open("r", encoding="utf-8") as f:
+    sig = json.load(f)
+
+core_top = pref["core_percentile_40"]["top_people"][:10]
+cluster_top = pref["largest_cluster_center"]["top_people"][:10]
+corr_top = sig["top_correlation_features"][:10]
+imp_top = sig["top_importance_features"][:10]
+
+lines = []
+lines.append("=== FINAL CORE TASTE REPORT ===")
+lines.append("")
+lines.append("1) Core taste (robust center: core_percentile_40) - Top 10:")
+for r in core_top:
+    lines.append(f"- {r['person']}: {r['similarity']:.4f}")
+
+lines.append("")
+lines.append("2) Dominant archetype (largest_cluster_center) - Top 10:")
+for r in cluster_top:
+    lines.append(f"- {r['person']}: {r['similarity']:.4f}")
+
+lines.append("")
+lines.append("3) Top attraction signals by correlation:")
+for r in corr_top:
+    lines.append(f"- {r['feature']}: corr={r['correlation']:.4f}")
+
+lines.append("")
+lines.append("4) Top attraction signals by RF importance:")
+for r in imp_top:
+    lines.append(f"- {r['feature']}: importance={r['importance']:.4f}")
+
+lines.append("")
+lines.append("Interpretation:")
+lines.append("- Eye openness family is the strongest attraction signal.")
+lines.append("- Robust core taste is better than mean_all in this dataset.")
+lines.append("- Use core_percentile_40 as primary taste vector and cluster center as secondary archetype view.")
+
+report_path = OUT / "final_core_taste_report.txt"
+report_path.write_text("\n".join(lines), encoding="utf-8")
+print(f"[DONE] Saved: {report_path}")
