@@ -1,0 +1,165 @@
+person_id,person_name,num_samples,split
+alesandrova_marina,Alesandrova Marina,7,train
+angel_baby,Angel Baby,6,train
+anna_chipovskaya,Anna Chipovskaya,7,train
+anne_hathaway,Anne Hathaway,7,train
+anya_taylor_joy,Anya Taylor Joy,6,train
+aoi_yu,Aoi Yu,8,train
+aoshima_kokoro,Aoshima Kokoro,5,train
+aragaki_yuko,Aragaki Yuko,5,train
+arimura_kasumi,Arimura Kasumi,8,train
+ashahina_aya,Ashahina Aya,6,train
+asuka_saito,Asuka Saito,7,train
+ayaka_konno,Ayaka Konno,7,train
+bae_suzy,Bae Suzy,5,train
+bao_thng_n,Bao Thượng Ân,8,train
+blake_lively,Blake Lively,5,train
+bch_bng,Bạch Băng,6,train
+can_nh_nh,Can Đình ĐÌnh,8,train
+catherine_zeta_jones,Catherine zeta jones,5,train
+chae_soo_bin,Chae Soo Bin,7,train
+choi_ji_woo,Choi Ji Woo,6,train
+choi_yewon,Choi Ye-won,8,train
+chu_lm,Chu Lâm,7,train
+chu_hu_mn,Châu Huệ Mẫn,8,train
+chng_nhc_nam,Chương Nhược Nam,8,train
+cc_tch_y,Cúc Tịch Y,8,train
+c_lc_na_trt,Cổ Lực Na Trát,7,train
+daran_tasha,Daran Tasha,8,train
+deguchi_natsuki,Deguchi Natsuki,7,train
+deva_cassel,Deva Cassel,7,train
+diana_kruger,Diana Kruger,6,train
+dip_bo_ngc,Diệp Bảo Ngọc,5,train
+dip_ton_chn,Diệp Toàn Chân,5,train
+dng_mch,Dương Mịch,8,train
+elina_karinova,Elina Karinova,7,train
+elle_fanning,Elle Fanning,7,train
+fujiyoshi_karin,Fujiyoshi Karin,6,train
+fukada_kyoko,Fukada Kyoko,8,train
+goo_yoon_young,Goo Yoon Young,8,train
+grace_kelly,Grace Kelly,7,train
+hamabe_minami,Hamabe Minami,10,train
+han_chaeyoung,Han Chae-young,4,train
+han_hyojoo,Han Hyo-joo,8,train
+hashimoto_kana,Hashimoto Kana,7,train
+heidy_larmar,Heidy Larmar,8,train
+hirose_suzu,Hirose Suzu,5,train
+hong_hwayeon,Hong Hwa-yeon,6,train
+hoshi_moeka,Hoshi Moeka,5,train
+hoi_thu,Hoài Thu,8,train
+ikeda_eliza,Ikeda Eliza,6,train
+im_jinnah,Im Jinnah,7,train
+imada_mio,Imada Mio,7,train
+imoto_ayaka,Imoto Ayaka,8,train
+ishihara_satomi,Ishihara Satomi,8,train
+italy_monoca,Italy Monoca,5,train
+jang_gyuri,Jang Gyu-ri,6,train
+jang_wonyoung,Jang Won-young,8,train
+jennifer_connely,Jennifer Connely,9,train
+jung_eunchae,Jung Eun-chae,7,train
+kang_hye_won,Kang Hye Won,6,train
+karina,Karina,7,train
+katsumura_mika,Katsumura Mika,3,train
+keira_knightkey,Keira Knightkey,5,train
+kim_claudia,Kim Claudia,5,train
+kim_hae_ri,Kim Hae Ri,6,train
+kim_hee_sun,Kim Hee Sun,5,train
+kim_ji_won,Kim Ji Won,8,train
+kim_jung_won,Kim Jung Won,7,train
+kim_tae_hee,Kim Tae Hee,7,train
+kim_yoojung,Kim Yoo-jung,8,train
+komatsu_nana,Komatsu Nana,9,train
+kudo_mio,Kudo Mio,6,train
+kudo_shizuka,Kudo Shizuka,5,train
+lee_ju_eun,Lee Ju Eun,7,train
+lee_ye_bin,Lee Ye bin,8,train
+lily_collins,Lily Collins,6,train
+lynne_frederick,Lynne Frederick,5,train
+lm_ch_linh,Lâm Chí Linh,7,train
+lm_dun,Lâm Duẫn,7,train
+l_gia_hn,Lý Gia Hân,8,train
+l_thun,Lý Thuần,8,train
+l_uyn_t,Lý Uyển Đát,6,train
+lu_ho_tn,Lưu Hạo Tồn,8,train
+lu_thi_thi,Lưu Thi Thi,7,train
+lu_tm_du,Lưu Tâm Du,8,train
+mai_davika,Mai Davika,7,train
+mao_hiu_ng,Mao Hiểu Đồng,7,train
+matsuzaka_keiko,Matsuzaka Keiko,6,train
+megan_fox,Megan Fox,8,train
+millie_brady,Millie Brady,6,train
+miriam_leone,Miriam Leone,7,train
+miyazawa_rie,Miyazawa Rie,6,train
+miyoshi_ayaka,Miyoshi Ayaka,7,train
+monica_belluci,Monica Belluci,6,train
+mnh_t_ngha,Mạnh Tử Nghĩa,4,train
+nagano_mei,Nagano Mei,8,train
+nagasawa_masami,Nagasawa Masami,7,train
+nakama_yukie,Nakama Yukie,6,train
+nakamori_akina,Nakamori Akina,10,train
+natsukawa_yui,Natsukawa Yui,6,train
+nguyn_ngoc_huyn,Nguyễn Ngoc Huyền,7,train
+nicole_kidman,Nicole Kidman,7,train
+oh_se_young,Oh Se Young,4,train
+okada_nana,Okada Nana,4,train
+ozawa_mayu,Ozawa Mayu,6,train
+park_jihyun,Park Jihyun,7,train
+phng_anh_o,Phương Anh Đào,8,train
+phng_li,Phương Lôi,3,train
+phm_bng_bng,Phạm Băng Băng,8,train
+quan_chi_lm,Quan Chi Lâm,8,train
+quan_hiu_ng,Quan Hiểu Đồng,8,train
+quan_tuyt_doanh,Quan Tuyết Doanh,6,train
+rebecca_ferguson,Rebecca Ferguson,4,train
+rena_nounen,Rena Nounen,7,train
+riho_takada,Riho Takada,6,train
+roh_jeong_un,Roh Jeong Un,6,train
+sana,Sana,8,train
+sasaki_nozomi,Sasaki Nozomi,8,train
+seino_nana,Seino Nana,6,train
+shin_sekyung,Shin Se-kyung,6,train
+shiraishi_sei,Shiraishi Sei,8,train
+son_yejin,Son Ye-jin,7,train
+song_hyekyo,Song Hye-kyo,7,train
+tanaka_yuko,Tanaka Yuko,7,train
+tanakashi_rin,Tanakashi Rin,6,train
+tao_tsuchiya,Tao Tsuchiya,6,train
+thu_h,Thu Hà,8,train
+th_nguyn,Thư Nguyễn,6,train
+thm_nguyt,Thầm Nguyệt,6,train
+thm_my_trang,Thẩm My Trang,5,train
+toda_erika,Toda Erika,8,train
+triu_kim_mch,Triệu Kim Mạch,7,train
+triu_l_dnh,Triệu Lệ Dĩnh,6,train
+trng_b_chi,Trương Bá Chi,8,train
+trng_d_hi,Trương Dư Hi,8,train
+trng_hinh_d,Trương Hinh Dư,5,train
+trng_miu_di,Trương Miểu Di,9,train
+trng_mn,Trương Mẫn,8,train
+trng_thin_i,Trương Thiên Ái,6,train
+trng_tnh_nghi,Trương Tịnh Nghi,6,train
+trng_v_k,Trương Vũ Kỳ,4,train
+trn_hng,Trần Hồng,8,train
+trn_c_dung,Trần Đức Dung,6,train
+trnh_sng,Trịnh Sảng,8,train
+tsuyu,Tsuyu,6,train
+tn_nht_ninh,Tôn Nhất Ninh,8,train
+tng_cn_cn,Tưởng Cần Cần,7,train
+tng_hn,Tưởng Hân,6,train
+tn_lam,Tần Lam,9,train
+tng_dt,Tống Dật,7,train
+t_hy_vin,Từ Hy Viên,8,train
+vng_s_nhin,Vương Sở Nhiên,7,train
+vng_t_hin,Vương Tổ Hiền,8,train
+vng_t_thun,Vương Tử Thuần,8,train
+vng_nh_l,Vương Ảnh Lộ,8,train
+vn_thin,Vạn Thiến,7,train
+winona_ryder,Winona Ryder,7,train
+yoshitaka_yuriko,Yoshitaka Yuriko,5,train
+yui_asakura,Yui Asakura,6,train
+n_o,Ân Đào,5,train
+in_hi_vi,Điền Hi Vi,7,train
+i_l_oa,Đại Lộ Oa,8,train
+ch_l_nhit_ba,Địch Lệ Nhiệt Ba,8,train
+ng_l_,Đồng Lệ Á,7,train
+_bng_nhn,Đỗ Băng Nhạn,5,train
