@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(''''keys:'''', list\\(d.keys\\(\\)\\)\\); print\\(''''sample:'''', str\\(d\\)[:500]\\)\")",
+      "Bash(python build_hf_features.py)",
+      "Bash(python -c \":*)",
+      "Read(//d/AI-ML/New folder/temp_restore//**)",
+      "Read(//d/AI-ML/New folder/Signal_Face_Patern/$HOME/.git-lfs/**)",
+      "Bash(du -sh $HOME/.git-lfs/)",
+      "Bash(find /d/AI-ML -name *.mp4 -type f)",
+      "Bash(find '/d/AI-ML/New folder/Signal_Face_Patern' -name *.mp4 -type f)",
+      "Read(//d/Downloads/**)"
+    ]
+  }
+}

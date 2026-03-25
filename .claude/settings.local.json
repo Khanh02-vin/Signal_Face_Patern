@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/AI-ML/New folder/temp_restore//**)",
+      "Bash(git -C '/d/AI-ML/New folder/temp_restore' lfs ls-files)",
+      "Bash(git -C '/d/AI-ML/New folder/temp_restore' log --oneline)",
+      "Read(//d/AI-ML/**)"
+    ]
+  }
+}
