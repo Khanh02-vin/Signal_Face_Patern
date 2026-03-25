@@ -17,7 +17,7 @@ venv/
 Thumbs.db
 
 # Raw dataset and large video files
-raw/
+
 
 # Optional: ignore generated images if repo gets heavy
 # output/*.png
