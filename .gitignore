@@ -18,11 +18,6 @@ Thumbs.db
 
 # Raw dataset and large video files
 raw/
-*.mp4
-*.mov
-*.avi
-*.mkv
-*.webm
 
 # Optional: ignore generated images if repo gets heavy
 # output/*.png
