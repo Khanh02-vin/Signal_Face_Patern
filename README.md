@@ -34,6 +34,7 @@ pip install -r requirements.txt
 
 ## Hướng dẫn sử dụng
 ### 1) Chuẩn bị dataset
+Dataset link:https://huggingface.co/datasets/Khanh510/Signal_Face
 Tổ chức thư mục `raw/` theo cấu trúc **person-level**:
 
 ```
