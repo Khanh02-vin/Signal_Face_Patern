@@ -1,1459 +1,1365 @@
 {
+  "num_persons": 164,
+  "num_videos": 1268,
+  "num_features": 39,
   "feature_columns": [
-    "expression_speed_max",
     "expression_speed_mean",
-    "expression_speed_median",
+    "expression_speed_mean_mean",
     "expression_speed_std",
-    "eye_contact_max",
     "eye_contact_mean",
-    "eye_contact_median",
+    "eye_contact_mean_mean",
     "eye_contact_std",
-    "eye_openness_max",
     "eye_openness_mean",
-    "eye_openness_median",
+    "eye_openness_mean_mean",
     "eye_openness_std",
-    "eye_spacing_ratio_max",
     "eye_spacing_ratio_mean",
-    "eye_spacing_ratio_median",
+    "eye_spacing_ratio_mean_mean",
     "eye_spacing_ratio_std",
-    "face_width_height_ratio_max",
     "face_width_height_ratio_mean",
-    "face_width_height_ratio_median",
+    "face_width_height_ratio_mean_mean",
     "face_width_height_ratio_std",
-    "facial_symmetry_max",
     "facial_symmetry_mean",
+    "facial_symmetry_mean_mean",
     "facial_symmetry_median",
     "facial_symmetry_std",
-    "gaze_stability_max",
     "gaze_stability_mean",
-    "gaze_stability_median",
+    "gaze_stability_mean_mean",
     "gaze_stability_std",
-    "happy_max",
     "happy_mean",
-    "happy_median",
-    "happy_std",
-    "head_tilt_max",
+    "happy_mean_mean",
     "head_tilt_mean",
-    "head_tilt_median",
+    "head_tilt_mean_mean",
     "head_tilt_std",
-    "jaw_ratio_max",
     "jaw_ratio_mean",
-    "jaw_ratio_median",
+    "jaw_ratio_mean_mean",
     "jaw_ratio_std",
-    "neutral_max",
     "neutral_mean",
-    "neutral_median",
-    "neutral_std",
-    "processed_frames",
+    "neutral_mean_mean",
     "smile_intensity_max",
+    "smile_intensity_max_mean",
     "smile_intensity_mean",
-    "smile_intensity_median",
+    "smile_intensity_mean_mean",
     "smile_intensity_std",
-    "surprise_max",
     "surprise_mean",
-    "surprise_median",
-    "surprise_std"
-  ],
-  "preference_vector": {
-    "expression_speed_max": 1.4828472671979398e-07,
-    "expression_speed_mean": -2.384185791015625e-07,
-    "expression_speed_median": -8.722631150703819e-08,
-    "expression_speed_std": 1.1339420069589323e-07,
-    "eye_contact_max": 1.187440830108244e-05,
-    "eye_contact_mean": -2.0003899408038706e-06,
-    "eye_contact_median": -2.3725556275167037e-06,
-    "eye_contact_std": -2.1515822368201043e-07,
-    "eye_openness_max": -6.396596319291348e-08,
-    "eye_openness_mean": 8.795319672572077e-08,
-    "eye_openness_median": -1.2847708319441153e-07,
-    "eye_openness_std": 1.8317524563826737e-07,
-    "eye_spacing_ratio_max": -1.1164967190779862e-06,
-    "eye_spacing_ratio_mean": 2.5702686343720416e-06,
-    "eye_spacing_ratio_median": 1.1281268825769075e-06,
-    "eye_spacing_ratio_std": -3.779806689863108e-08,
-    "face_width_height_ratio_max": -2.2824217182915163e-07,
-    "face_width_height_ratio_mean": 2.8857371603407955e-07,
-    "face_width_height_ratio_median": 1.7590639345144155e-07,
-    "face_width_height_ratio_std": 5.815087433802546e-08,
-    "facial_symmetry_max": 2.0192890133330366e-06,
-    "facial_symmetry_mean": 7.850368177741984e-08,
-    "facial_symmetry_median": -4.76837158203125e-07,
-    "facial_symmetry_std": 1.773601638888067e-07,
-    "gaze_stability_max": 0.0,
-    "gaze_stability_mean": -2.9438879209919833e-06,
-    "gaze_stability_median": 1.070557573257247e-05,
-    "gaze_stability_std": 3.27098659269609e-09,
-    "happy_max": -3.4599770515342243e-07,
-    "happy_mean": 5.815087433802546e-08,
-    "happy_median": -2.0352805663037543e-08,
-    "happy_std": -1.7517950823275896e-07,
-    "head_tilt_max": -9.013385238176852e-08,
-    "head_tilt_mean": -9.231450803781627e-08,
-    "head_tilt_median": 5.6697100347946616e-08,
-    "head_tilt_std": -7.995745221478501e-08,
-    "jaw_ratio_max": 6.818189604018698e-07,
-    "jaw_ratio_mean": -1.9073486328125e-06,
-    "jaw_ratio_median": -1.99457485905441e-06,
-    "jaw_ratio_std": -2.733090980200359e-07,
-    "neutral_max": 6.512897812172014e-07,
-    "neutral_mean": 1.6572998617903067e-07,
-    "neutral_median": -5.74239855666292e-08,
-    "neutral_std": -5.000974852009676e-07,
-    "processed_frames": -1.1630174157062356e-08,
-    "smile_intensity_max": -1.9771296422277373e-07,
-    "smile_intensity_mean": 2.3260348314124712e-08,
-    "smile_intensity_median": 2.616789274156872e-08,
-    "smile_intensity_std": -2.3260348314124712e-08,
-    "surprise_max": -1.5700736355483969e-07,
-    "surprise_mean": 2.907543716901273e-08,
-    "surprise_median": 5.815087078531178e-09,
-    "surprise_std": -4.6520696628249425e-08
-  },
-  "similarity_scores": [
-    {
-      "person": "Chương Nhược Nam",
-      "similarity_to_type": 0.23404784500598907
-    },
-    {
-      "person": "Lý Thuần",
-      "similarity_to_type": 0.1917891949415207
-    },
-    {
-      "person": "Anya Taylor Joy",
-      "similarity_to_type": 0.18343697488307953
-    },
-    {
-      "person": "Lynne Frederick",
-      "similarity_to_type": 0.18217261135578156
-    },
-    {
-      "person": "Mạnh Tử Nghĩa",
-      "similarity_to_type": 0.18144837021827698
-    },
-    {
-      "person": "Aoi Yu",
-      "similarity_to_type": 0.17827048897743225
-    },
-    {
-      "person": "Alesandrova Marina",
-      "similarity_to_type": 0.17644543945789337
-    },
-    {
-      "person": "Mai Davika",
-      "similarity_to_type": 0.17469006776809692
-    },
-    {
-      "person": "Ozawa Mayu",
-      "similarity_to_type": 0.17219293117523193
-    },
-    {
-      "person": "Tống Dật",
-      "similarity_to_type": 0.16512548923492432
-    },
-    {
-      "person": "Đại Lộ Oa",
-      "similarity_to_type": 0.16114400327205658
-    },
-    {
-      "person": "Thẩm My Trang",
-      "similarity_to_type": 0.15461604297161102
-    },
-    {
-      "person": "Quan Tuyết Doanh",
-      "similarity_to_type": 0.15305809676647186
-    },
-    {
-      "person": "Hoshi Moeka",
-      "similarity_to_type": 0.1502656191587448
-    },
-    {
-      "person": "Imada Mio",
-      "similarity_to_type": 0.14548814296722412
-    },
-    {
-      "person": "Tần Lam",
-      "similarity_to_type": 0.14283955097198486
-    },
-    {
-      "person": "Lâm Duẫn",
-      "similarity_to_type": 0.14029985666275024
-    },
-    {
-      "person": "Miyazawa Rie",
-      "similarity_to_type": 0.13934558629989624
-    },
-    {
-      "person": "Cổ Lực Na Trát",
-      "similarity_to_type": 0.1372833400964737
-    },
-    {
-      "person": "Kang Hye Won",
-      "similarity_to_type": 0.13462364673614502
-    },
-    {
-      "person": "Vương Tổ Hiền",
-      "similarity_to_type": 0.13270115852355957
-    },
-    {
-      "person": "Ashahina Aya",
-      "similarity_to_type": 0.12972132861614227
-    },
-    {
-      "person": "Vương Ảnh Lộ",
-      "similarity_to_type": 0.1256231814622879
-    },
-    {
-      "person": "Karina",
-      "similarity_to_type": 0.12435278296470642
-    },
-    {
-      "person": "Lưu Hạo Tồn",
-      "similarity_to_type": 0.12367212772369385
-    },
-    {
-      "person": "Choi Ji Woo",
-      "similarity_to_type": 0.12195213884115219
-    },
-    {
-      "person": "Seino Nana",
-      "similarity_to_type": 0.12185529619455338
-    },
-    {
-      "person": "Nakama Yukie",
-      "similarity_to_type": 0.12092157453298569
-    },
-    {
-      "person": "Hoài Thu",
-      "similarity_to_type": 0.11685904860496521
-    },
-    {
-      "person": "Kudo Mio",
-      "similarity_to_type": 0.1145491972565651
-    },
-    {
-      "person": "Đồng Lệ Á",
-      "similarity_to_type": 0.1084473729133606
-    },
-    {
-      "person": "Điền Hi Vi",
-      "similarity_to_type": 0.10776301473379135
-    },
-    {
-      "person": "Trương Vũ Kỳ",
-      "similarity_to_type": 0.10672898590564728
-    },
-    {
-      "person": "Shiraishi Sei",
-      "similarity_to_type": 0.09823565185070038
-    },
-    {
-      "person": "Chu Lâm",
-      "similarity_to_type": 0.0927388072013855
-    },
-    {
-      "person": "Sasaki Nozomi",
-      "similarity_to_type": 0.09265963733196259
-    },
-    {
-      "person": "Heidy Larmar",
-      "similarity_to_type": 0.09122984111309052
-    },
-    {
-      "person": "Hong Hwa-yeon",
-      "similarity_to_type": 0.08960261940956116
-    },
-    {
-      "person": "Vương Tử Thuần",
-      "similarity_to_type": 0.08705223351716995
-    },
-    {
-      "person": "Hamabe Minami",
-      "similarity_to_type": 0.08692701905965805
-    },
-    {
-      "person": "Aoshima Kokoro",
-      "similarity_to_type": 0.08600153774023056
-    },
-    {
-      "person": "Tôn Nhất Ninh",
-      "similarity_to_type": 0.08468502014875412
-    },
-    {
-      "person": "Natsukawa Yui",
-      "similarity_to_type": 0.08303721249103546
-    },
-    {
-      "person": "Trương Thiên Ái",
-      "similarity_to_type": 0.07802556455135345
-    },
-    {
-      "person": "Thư Nguyễn",
-      "similarity_to_type": 0.07763926684856415
-    },
-    {
-      "person": "Okada Nana",
-      "similarity_to_type": 0.07307951152324677
-    },
-    {
-      "person": "Catherine zeta jones",
-      "similarity_to_type": 0.07022221386432648
-    },
-    {
-      "person": "Trương Hinh Dư",
-      "similarity_to_type": 0.07019510120153427
-    },
-    {
-      "person": "Phạm Băng Băng",
-      "similarity_to_type": 0.07006505876779556
-    },
-    {
-      "person": "Vương Sở Nhiên",
-      "similarity_to_type": 0.06848079711198807
-    },
-    {
-      "person": "Tsuyu",
-      "similarity_to_type": 0.06696422398090363
-    },
-    {
-      "person": "Dương Mịch",
-      "similarity_to_type": 0.06540009379386902
-    },
-    {
-      "person": "Kim Yoo-jung",
-      "similarity_to_type": 0.06416741758584976
-    },
-    {
-      "person": "Trần Hồng",
-      "similarity_to_type": 0.06401403248310089
-    },
-    {
-      "person": "Matsuzaka Keiko",
-      "similarity_to_type": 0.06398248672485352
-    },
-    {
-      "person": "Song Hye-kyo",
-      "similarity_to_type": 0.061604663729667664
-    },
-    {
-      "person": "Trương Dư Hi",
-      "similarity_to_type": 0.061261292546987534
-    },
-    {
-      "person": "Mao Hiểu Đồng",
-      "similarity_to_type": 0.05832245945930481
-    },
-    {
-      "person": "Trương Bá Chi",
-      "similarity_to_type": 0.0559278205037117
-    },
-    {
-      "person": "Nagasawa Masami",
-      "similarity_to_type": 0.055565137416124344
-    },
-    {
-      "person": "Diệp Toàn Chân",
-      "similarity_to_type": 0.05115267634391785
-    },
-    {
-      "person": "Kim Hee Sun",
-      "similarity_to_type": 0.05047808587551117
-    },
-    {
-      "person": "Angel Baby",
-      "similarity_to_type": 0.04919693246483803
-    },
-    {
-      "person": "Chae Soo Bin",
-      "similarity_to_type": 0.048183877021074295
-    },
-    {
-      "person": "Miyoshi Ayaka",
-      "similarity_to_type": 0.045681994408369064
-    },
-    {
-      "person": "Cúc Tịch Y",
-      "similarity_to_type": 0.0436859168112278
-    },
-    {
-      "person": "Monica Belluci",
-      "similarity_to_type": 0.04106245934963226
-    },
-    {
-      "person": "Tưởng Cần Cần",
-      "similarity_to_type": 0.03980126976966858
-    },
-    {
-      "person": "Ayaka Konno",
-      "similarity_to_type": 0.039046335965394974
-    },
-    {
-      "person": "Sana",
-      "similarity_to_type": 0.03311682865023613
-    },
-    {
-      "person": "Elina Karinova",
-      "similarity_to_type": 0.028498956933617592
-    },
-    {
-      "person": "Tanaka Yuko",
-      "similarity_to_type": 0.02842945232987404
-    },
-    {
-      "person": "Imoto Ayaka",
-      "similarity_to_type": 0.0280276108533144
-    },
-    {
-      "person": "Thu Hà",
-      "similarity_to_type": 0.027002232149243355
-    },
-    {
-      "person": "Vạn Thiến",
-      "similarity_to_type": 0.02658206969499588
-    },
-    {
-      "person": "Đỗ Băng Nhạn",
-      "similarity_to_type": 0.025375740602612495
-    },
-    {
-      "person": "Deva Cassel",
-      "similarity_to_type": 0.023388341069221497
-    },
-    {
-      "person": "Phương Lôi",
-      "similarity_to_type": 0.022836413234472275
-    },
-    {
-      "person": "Kim Jung Won",
-      "similarity_to_type": 0.018908459693193436
-    },
-    {
-      "person": "Elle Fanning",
-      "similarity_to_type": 0.017820194363594055
-    },
-    {
-      "person": "Goo Yoon Young",
-      "similarity_to_type": 0.015821365639567375
-    },
-    {
-      "person": "Triệu Kim Mạch",
-      "similarity_to_type": 0.014225415885448456
-    },
-    {
-      "person": "Shin Se-kyung",
-      "similarity_to_type": 0.006973479874432087
-    },
-    {
-      "person": "Fukada Kyoko",
-      "similarity_to_type": 0.006144746206700802
-    },
-    {
-      "person": "Ikeda Eliza",
-      "similarity_to_type": 0.005860147997736931
-    },
-    {
-      "person": "Triệu Lệ Dĩnh",
-      "similarity_to_type": 0.0042471690103411674
-    },
-    {
-      "person": "Kudo Shizuka",
-      "similarity_to_type": 0.0025357981212437153
-    },
-    {
-      "person": "Nagano Mei",
-      "similarity_to_type": 0.000947196560446173
-    },
-    {
-      "person": "Quan Chi Lâm",
-      "similarity_to_type": 0.000511118327267468
-    },
-    {
-      "person": "Trịnh Sảng",
-      "similarity_to_type": 0.00017971958732232451
-    },
-    {
-      "person": "Lý Gia Hân",
-      "similarity_to_type": -0.001086511299945414
-    },
-    {
-      "person": "Trần Đức Dung",
-      "similarity_to_type": -0.0018643366638571024
-    },
-    {
-      "person": "Jang Won-young",
-      "similarity_to_type": -0.003540343837812543
-    },
-    {
-      "person": "Lâm Chí Linh",
-      "similarity_to_type": -0.003597550792619586
-    },
-    {
-      "person": "Oh Se Young",
-      "similarity_to_type": -0.0058780862018466
-    },
-    {
-      "person": "Diana Kruger",
-      "similarity_to_type": -0.00595233216881752
-    },
-    {
-      "person": "Jennifer Connely",
-      "similarity_to_type": -0.006951133720576763
-    },
-    {
-      "person": "Deguchi Natsuki",
-      "similarity_to_type": -0.01042227540165186
-    },
-    {
-      "person": "Lily Collins",
-      "similarity_to_type": -0.011090106330811977
-    },
-    {
-      "person": "Hirose Suzu",
-      "similarity_to_type": -0.011180718429386616
-    },
-    {
-      "person": "Katsumura Mika",
-      "similarity_to_type": -0.011984423734247684
-    },
-    {
-      "person": "Ân Đào",
-      "similarity_to_type": -0.014515872113406658
-    },
-    {
-      "person": "Arimura Kasumi",
-      "similarity_to_type": -0.01891784742474556
-    },
-    {
-      "person": "Từ Hy Viên",
-      "similarity_to_type": -0.019382119178771973
-    },
-    {
-      "person": "Quan Hiểu Đồng",
-      "similarity_to_type": -0.020514506846666336
-    },
-    {
-      "person": "Millie Brady",
-      "similarity_to_type": -0.021863052621483803
-    },
-    {
-      "person": "Bae Suzy",
-      "similarity_to_type": -0.022205984219908714
-    },
-    {
-      "person": "Daran Tasha",
-      "similarity_to_type": -0.02252446860074997
-    },
-    {
-      "person": "Roh Jeong Un",
-      "similarity_to_type": -0.027664046734571457
-    },
-    {
-      "person": "Hashimoto Kana",
-      "similarity_to_type": -0.02815772220492363
-    },
-    {
-      "person": "Châu Huệ Mẫn",
-      "similarity_to_type": -0.029485128819942474
-    },
-    {
-      "person": "Keira Knightkey",
-      "similarity_to_type": -0.02959035150706768
-    },
-    {
-      "person": "Tao Tsuchiya",
-      "similarity_to_type": -0.030046425759792328
-    },
-    {
-      "person": "Lee Ye bin",
-      "similarity_to_type": -0.03150668740272522
-    },
-    {
-      "person": "Park Jihyun",
-      "similarity_to_type": -0.03511790931224823
-    },
-    {
-      "person": "Son Ye-jin",
-      "similarity_to_type": -0.0352480486035347
-    },
-    {
-      "person": "Nguyễn Ngoc Huyền",
-      "similarity_to_type": -0.03647252917289734
-    },
-    {
-      "person": "Yoshitaka Yuriko",
-      "similarity_to_type": -0.044131770730018616
-    },
-    {
-      "person": "Kim Ji Won",
-      "similarity_to_type": -0.04709012061357498
-    },
-    {
-      "person": "Jung Eun-chae",
-      "similarity_to_type": -0.047444816678762436
-    },
-    {
-      "person": "Kim Tae Hee",
-      "similarity_to_type": -0.0477587915956974
-    },
-    {
-      "person": "Anna Chipovskaya",
-      "similarity_to_type": -0.047787152230739594
-    },
-    {
-      "person": "Yui Asakura",
-      "similarity_to_type": -0.047898128628730774
-    },
-    {
-      "person": "Lee Ju Eun",
-      "similarity_to_type": -0.05177091807126999
-    },
-    {
-      "person": "Asuka Saito",
-      "similarity_to_type": -0.05386519432067871
-    },
-    {
-      "person": "Italy Monoca",
-      "similarity_to_type": -0.05522165447473526
-    },
-    {
-      "person": "Anne Hathaway",
-      "similarity_to_type": -0.05730903893709183
-    },
-    {
-      "person": "Trương Miểu Di",
-      "similarity_to_type": -0.06532333046197891
-    },
-    {
-      "person": "Im Jinnah",
-      "similarity_to_type": -0.06550399214029312
-    },
-    {
-      "person": "Rena Nounen",
-      "similarity_to_type": -0.06581970304250717
-    },
-    {
-      "person": "Bao Thượng Ân",
-      "similarity_to_type": -0.06753566116094589
-    },
-    {
-      "person": "Lưu Tâm Du",
-      "similarity_to_type": -0.06857385486364365
-    },
-    {
-      "person": "Aragaki Yuko",
-      "similarity_to_type": -0.0718916803598404
-    },
-    {
-      "person": "Trương Mẫn",
-      "similarity_to_type": -0.07406484335660934
-    },
-    {
-      "person": "Bạch Băng",
-      "similarity_to_type": -0.07431870698928833
-    },
-    {
-      "person": "Grace Kelly",
-      "similarity_to_type": -0.07811976969242096
-    },
-    {
-      "person": "Fujiyoshi Karin",
-      "similarity_to_type": -0.08031877130270004
-    },
-    {
-      "person": "Rebecca Ferguson",
-      "similarity_to_type": -0.08233886957168579
-    },
-    {
-      "person": "Nicole Kidman",
-      "similarity_to_type": -0.08790864050388336
-    },
-    {
-      "person": "Riho Takada",
-      "similarity_to_type": -0.09427675604820251
-    },
-    {
-      "person": "Phương Anh Đào",
-      "similarity_to_type": -0.10247320681810379
-    },
-    {
-      "person": "Tanakashi Rin",
-      "similarity_to_type": -0.10255688428878784
-    },
-    {
-      "person": "Choi Ye-won",
-      "similarity_to_type": -0.1160464957356453
-    },
-    {
-      "person": "Diệp Bảo Ngọc",
-      "similarity_to_type": -0.11755701899528503
-    },
-    {
-      "person": "Komatsu Nana",
-      "similarity_to_type": -0.12121336162090302
-    },
-    {
-      "person": "Megan Fox",
-      "similarity_to_type": -0.12547466158866882
-    },
-    {
-      "person": "Ishihara Satomi",
-      "similarity_to_type": -0.13020764291286469
-    },
-    {
-      "person": "Blake Lively",
-      "similarity_to_type": -0.13112254440784454
-    },
-    {
-      "person": "Nakamori Akina",
-      "similarity_to_type": -0.13228951394557953
-    },
-    {
-      "person": "Can Đình ĐÌnh",
-      "similarity_to_type": -0.13601768016815186
-    },
-    {
-      "person": "Han Hyo-joo",
-      "similarity_to_type": -0.14203940331935883
-    },
-    {
-      "person": "Thầm Nguyệt",
-      "similarity_to_type": -0.14493030309677124
-    },
-    {
-      "person": "Lý Uyển Đát",
-      "similarity_to_type": -0.1483348309993744
-    },
-    {
-      "person": "Toda Erika",
-      "similarity_to_type": -0.14931173622608185
-    },
-    {
-      "person": "Miriam Leone",
-      "similarity_to_type": -0.162827268242836
-    },
-    {
-      "person": "Kim Hae Ri",
-      "similarity_to_type": -0.1730743795633316
-    },
-    {
-      "person": "Lưu Thi Thi",
-      "similarity_to_type": -0.1739424467086792
-    },
-    {
-      "person": "Jang Gyu-ri",
-      "similarity_to_type": -0.1840115785598755
-    },
-    {
-      "person": "Han Chae-young",
-      "similarity_to_type": -0.22797353565692902
-    },
-    {
-      "person": "Tưởng Hân",
-      "similarity_to_type": -0.27208584547042847
-    },
-    {
-      "person": "Trương Tịnh Nghi",
-      "similarity_to_type": -0.2752169668674469
-    },
-    {
-      "person": "Kim Claudia",
-      "similarity_to_type": -0.2984417974948883
-    },
-    {
-      "person": "Winona Ryder",
-      "similarity_to_type": -0.38727787137031555
-    },
-    {
-      "person": "Địch Lệ Nhiệt Ba",
-      "similarity_to_type": -0.42699047923088074
-    }
-  ],
-  "clusters": [
-    {
-      "person": "Alesandrova Marina",
-      "cluster": 1
-    },
-    {
-      "person": "Angel Baby",
-      "cluster": 1
-    },
-    {
-      "person": "Anna Chipovskaya",
-      "cluster": 1
-    },
-    {
-      "person": "Anne Hathaway",
-      "cluster": 1
-    },
-    {
-      "person": "Anya Taylor Joy",
-      "cluster": 1
-    },
-    {
-      "person": "Aoi Yu",
-      "cluster": 0
-    },
-    {
-      "person": "Aoshima Kokoro",
-      "cluster": 0
-    },
-    {
-      "person": "Aragaki Yuko",
-      "cluster": 0
-    },
-    {
-      "person": "Arimura Kasumi",
-      "cluster": 0
-    },
-    {
-      "person": "Ashahina Aya",
-      "cluster": 0
-    },
-    {
-      "person": "Asuka Saito",
-      "cluster": 0
-    },
-    {
-      "person": "Ayaka Konno",
-      "cluster": 0
-    },
-    {
-      "person": "Bae Suzy",
-      "cluster": 0
-    },
-    {
-      "person": "Bao Thượng Ân",
-      "cluster": 1
-    },
-    {
-      "person": "Blake Lively",
-      "cluster": 0
-    },
-    {
-      "person": "Bạch Băng",
-      "cluster": 0
-    },
-    {
-      "person": "Can Đình ĐÌnh",
-      "cluster": 1
-    },
-    {
-      "person": "Catherine zeta jones",
-      "cluster": 1
-    },
-    {
-      "person": "Chae Soo Bin",
-      "cluster": 1
-    },
-    {
-      "person": "Choi Ji Woo",
-      "cluster": 1
-    },
-    {
-      "person": "Choi Ye-won",
-      "cluster": 0
-    },
-    {
-      "person": "Chu Lâm",
-      "cluster": 0
-    },
-    {
-      "person": "Châu Huệ Mẫn",
-      "cluster": 0
-    },
-    {
-      "person": "Chương Nhược Nam",
-      "cluster": 1
-    },
-    {
-      "person": "Cúc Tịch Y",
-      "cluster": 1
-    },
-    {
-      "person": "Cổ Lực Na Trát",
-      "cluster": 1
-    },
-    {
-      "person": "Daran Tasha",
-      "cluster": 1
-    },
-    {
-      "person": "Deguchi Natsuki",
-      "cluster": 0
-    },
-    {
-      "person": "Deva Cassel",
-      "cluster": 1
-    },
-    {
-      "person": "Diana Kruger",
-      "cluster": 1
-    },
-    {
-      "person": "Diệp Bảo Ngọc",
-      "cluster": 1
-    },
-    {
-      "person": "Diệp Toàn Chân",
-      "cluster": 1
-    },
-    {
-      "person": "Dương Mịch",
-      "cluster": 1
-    },
-    {
-      "person": "Elina Karinova",
-      "cluster": 1
-    },
-    {
-      "person": "Elle Fanning",
-      "cluster": 1
-    },
-    {
-      "person": "Fujiyoshi Karin",
-      "cluster": 0
-    },
-    {
-      "person": "Fukada Kyoko",
-      "cluster": 0
-    },
-    {
-      "person": "Goo Yoon Young",
-      "cluster": 0
-    },
-    {
-      "person": "Grace Kelly",
-      "cluster": 0
-    },
-    {
-      "person": "Hamabe Minami",
-      "cluster": 1
-    },
-    {
-      "person": "Han Chae-young",
-      "cluster": 0
-    },
-    {
-      "person": "Han Hyo-joo",
-      "cluster": 0
-    },
-    {
-      "person": "Hashimoto Kana",
-      "cluster": 1
-    },
-    {
-      "person": "Heidy Larmar",
-      "cluster": 1
-    },
-    {
-      "person": "Hirose Suzu",
-      "cluster": 0
-    },
-    {
-      "person": "Hong Hwa-yeon",
-      "cluster": 0
-    },
-    {
-      "person": "Hoshi Moeka",
-      "cluster": 1
-    },
-    {
-      "person": "Hoài Thu",
-      "cluster": 1
-    },
-    {
-      "person": "Ikeda Eliza",
-      "cluster": 0
-    },
-    {
-      "person": "Im Jinnah",
-      "cluster": 1
-    },
-    {
-      "person": "Imada Mio",
-      "cluster": 0
-    },
-    {
-      "person": "Imoto Ayaka",
-      "cluster": 0
-    },
-    {
-      "person": "Ishihara Satomi",
-      "cluster": 0
-    },
-    {
-      "person": "Italy Monoca",
-      "cluster": 1
-    },
-    {
-      "person": "Jang Gyu-ri",
-      "cluster": 0
-    },
-    {
-      "person": "Jang Won-young",
-      "cluster": 1
-    },
-    {
-      "person": "Jennifer Connely",
-      "cluster": 0
-    },
-    {
-      "person": "Jung Eun-chae",
-      "cluster": 0
-    },
-    {
-      "person": "Kang Hye Won",
-      "cluster": 0
-    },
-    {
-      "person": "Karina",
-      "cluster": 0
-    },
-    {
-      "person": "Katsumura Mika",
-      "cluster": 0
-    },
-    {
-      "person": "Keira Knightkey",
-      "cluster": 0
-    },
-    {
-      "person": "Kim Claudia",
-      "cluster": 0
-    },
-    {
-      "person": "Kim Hae Ri",
-      "cluster": 1
-    },
-    {
-      "person": "Kim Hee Sun",
-      "cluster": 0
-    },
-    {
-      "person": "Kim Ji Won",
-      "cluster": 1
-    },
-    {
-      "person": "Kim Jung Won",
-      "cluster": 1
-    },
-    {
-      "person": "Kim Tae Hee",
-      "cluster": 1
-    },
-    {
-      "person": "Kim Yoo-jung",
-      "cluster": 0
-    },
-    {
-      "person": "Komatsu Nana",
-      "cluster": 0
-    },
-    {
-      "person": "Kudo Mio",
-      "cluster": 0
-    },
-    {
-      "person": "Kudo Shizuka",
-      "cluster": 0
-    },
-    {
-      "person": "Lee Ju Eun",
-      "cluster": 1
-    },
-    {
-      "person": "Lee Ye bin",
-      "cluster": 1
-    },
-    {
-      "person": "Lily Collins",
-      "cluster": 1
-    },
-    {
-      "person": "Lynne Frederick",
-      "cluster": 1
-    },
-    {
-      "person": "Lâm Chí Linh",
-      "cluster": 0
-    },
-    {
-      "person": "Lâm Duẫn",
-      "cluster": 0
-    },
-    {
-      "person": "Lý Gia Hân",
-      "cluster": 0
-    },
-    {
-      "person": "Lý Thuần",
-      "cluster": 0
-    },
-    {
-      "person": "Lý Uyển Đát",
-      "cluster": 1
-    },
-    {
-      "person": "Lưu Hạo Tồn",
-      "cluster": 1
-    },
-    {
-      "person": "Lưu Thi Thi",
-      "cluster": 1
-    },
-    {
-      "person": "Lưu Tâm Du",
-      "cluster": 0
-    },
-    {
-      "person": "Mai Davika",
-      "cluster": 0
-    },
-    {
-      "person": "Mao Hiểu Đồng",
-      "cluster": 1
-    },
-    {
-      "person": "Matsuzaka Keiko",
-      "cluster": 0
-    },
-    {
-      "person": "Megan Fox",
-      "cluster": 0
-    },
-    {
-      "person": "Millie Brady",
-      "cluster": 0
-    },
-    {
-      "person": "Miriam Leone",
-      "cluster": 0
-    },
-    {
-      "person": "Miyazawa Rie",
-      "cluster": 0
-    },
-    {
-      "person": "Miyoshi Ayaka",
-      "cluster": 0
-    },
-    {
-      "person": "Monica Belluci",
-      "cluster": 1
-    },
-    {
-      "person": "Mạnh Tử Nghĩa",
-      "cluster": 1
-    },
-    {
-      "person": "Nagano Mei",
-      "cluster": 0
-    },
-    {
-      "person": "Nagasawa Masami",
-      "cluster": 0
-    },
-    {
-      "person": "Nakama Yukie",
-      "cluster": 0
-    },
-    {
-      "person": "Nakamori Akina",
-      "cluster": 0
-    },
-    {
-      "person": "Natsukawa Yui",
-      "cluster": 0
-    },
-    {
-      "person": "Nguyễn Ngoc Huyền",
-      "cluster": 1
-    },
-    {
-      "person": "Nicole Kidman",
-      "cluster": 0
-    },
-    {
-      "person": "Oh Se Young",
-      "cluster": 0
-    },
-    {
-      "person": "Okada Nana",
-      "cluster": 0
-    },
-    {
-      "person": "Ozawa Mayu",
-      "cluster": 0
-    },
-    {
-      "person": "Park Jihyun",
-      "cluster": 0
-    },
-    {
-      "person": "Phương Anh Đào",
-      "cluster": 1
-    },
-    {
-      "person": "Phương Lôi",
-      "cluster": 1
-    },
-    {
-      "person": "Phạm Băng Băng",
-      "cluster": 1
-    },
-    {
-      "person": "Quan Chi Lâm",
-      "cluster": 1
-    },
-    {
-      "person": "Quan Hiểu Đồng",
-      "cluster": 1
-    },
-    {
-      "person": "Quan Tuyết Doanh",
-      "cluster": 1
-    },
-    {
-      "person": "Rebecca Ferguson",
-      "cluster": 0
-    },
-    {
-      "person": "Rena Nounen",
-      "cluster": 0
-    },
-    {
-      "person": "Riho Takada",
-      "cluster": 0
-    },
-    {
-      "person": "Roh Jeong Un",
-      "cluster": 0
-    },
-    {
-      "person": "Sana",
-      "cluster": 1
-    },
-    {
-      "person": "Sasaki Nozomi",
-      "cluster": 0
-    },
-    {
-      "person": "Seino Nana",
-      "cluster": 1
-    },
-    {
-      "person": "Shin Se-kyung",
-      "cluster": 0
-    },
-    {
-      "person": "Shiraishi Sei",
-      "cluster": 0
-    },
-    {
-      "person": "Son Ye-jin",
-      "cluster": 1
-    },
-    {
-      "person": "Song Hye-kyo",
-      "cluster": 0
-    },
-    {
-      "person": "Tanaka Yuko",
-      "cluster": 0
-    },
-    {
-      "person": "Tanakashi Rin",
-      "cluster": 0
-    },
-    {
-      "person": "Tao Tsuchiya",
-      "cluster": 0
-    },
-    {
-      "person": "Thu Hà",
-      "cluster": 0
-    },
-    {
-      "person": "Thư Nguyễn",
-      "cluster": 1
-    },
-    {
-      "person": "Thầm Nguyệt",
-      "cluster": 1
-    },
-    {
-      "person": "Thẩm My Trang",
-      "cluster": 1
-    },
-    {
-      "person": "Toda Erika",
-      "cluster": 0
-    },
-    {
-      "person": "Triệu Kim Mạch",
-      "cluster": 1
-    },
-    {
-      "person": "Triệu Lệ Dĩnh",
-      "cluster": 1
-    },
-    {
-      "person": "Trương Bá Chi",
-      "cluster": 0
-    },
-    {
-      "person": "Trương Dư Hi",
-      "cluster": 1
-    },
-    {
-      "person": "Trương Hinh Dư",
-      "cluster": 1
-    },
-    {
-      "person": "Trương Miểu Di",
-      "cluster": 1
-    },
-    {
-      "person": "Trương Mẫn",
-      "cluster": 0
-    },
-    {
-      "person": "Trương Thiên Ái",
-      "cluster": 1
-    },
-    {
-      "person": "Trương Tịnh Nghi",
-      "cluster": 1
-    },
-    {
-      "person": "Trương Vũ Kỳ",
-      "cluster": 1
-    },
-    {
-      "person": "Trần Hồng",
-      "cluster": 1
-    },
-    {
-      "person": "Trần Đức Dung",
-      "cluster": 1
-    },
-    {
-      "person": "Trịnh Sảng",
-      "cluster": 0
-    },
-    {
-      "person": "Tsuyu",
-      "cluster": 1
-    },
-    {
-      "person": "Tôn Nhất Ninh",
-      "cluster": 1
-    },
-    {
-      "person": "Tưởng Cần Cần",
-      "cluster": 1
-    },
-    {
-      "person": "Tưởng Hân",
-      "cluster": 1
-    },
-    {
-      "person": "Tần Lam",
-      "cluster": 0
-    },
-    {
-      "person": "Tống Dật",
-      "cluster": 1
-    },
-    {
-      "person": "Từ Hy Viên",
-      "cluster": 0
-    },
-    {
-      "person": "Vương Sở Nhiên",
-      "cluster": 1
-    },
-    {
-      "person": "Vương Tổ Hiền",
-      "cluster": 0
-    },
-    {
-      "person": "Vương Tử Thuần",
-      "cluster": 1
-    },
-    {
-      "person": "Vương Ảnh Lộ",
-      "cluster": 1
-    },
-    {
-      "person": "Vạn Thiến",
-      "cluster": 1
-    },
-    {
-      "person": "Winona Ryder",
-      "cluster": 1
-    },
-    {
-      "person": "Yoshitaka Yuriko",
-      "cluster": 0
-    },
-    {
-      "person": "Yui Asakura",
-      "cluster": 0
-    },
-    {
-      "person": "Ân Đào",
-      "cluster": 1
-    },
-    {
-      "person": "Điền Hi Vi",
-      "cluster": 1
-    },
-    {
-      "person": "Đại Lộ Oa",
-      "cluster": 0
-    },
-    {
-      "person": "Địch Lệ Nhiệt Ba",
-      "cluster": 1
-    },
-    {
-      "person": "Đồng Lệ Á",
-      "cluster": 1
-    },
-    {
-      "person": "Đỗ Băng Nhạn",
-      "cluster": 1
-    }
+    "surprise_mean_mean"
   ],
   "cluster_method": "auto_kmeans",
-  "cluster_metadata": {
-    "selected_k": 2.0,
-    "k_selection": "silhouette"
-  },
-  "attraction_summary": {
-    "face_structure": [
-      "eye_spacing_ratio_mean=0.000",
-      "facial_symmetry_max=0.000",
-      "jaw_ratio_median=-0.000",
-      "jaw_ratio_mean=-0.000"
-    ],
-    "eye_behavior": [
-      "eye_contact_max=0.000",
-      "gaze_stability_median=0.000",
-      "gaze_stability_mean=-0.000",
-      "eye_spacing_ratio_mean=0.000"
-    ],
-    "expression": [
-      "expression_speed_mean=-0.000",
-      "smile_intensity_max=-0.000",
-      "expression_speed_max=0.000",
-      "expression_speed_std=0.000"
-    ],
-    "emotion": [
-      "neutral_max=0.000",
-      "neutral_std=-0.000",
-      "happy_max=-0.000",
-      "happy_std=-0.000"
-    ]
+  "selected_k": 2,
+  "silhouette_score": 0.144866943359375,
+  "similarity_scores": [
+    {
+      "person": "Bạch Băng",
+      "person_id": "bch_bng",
+      "similarity_to_type": 0.5571699738502502,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Roh Jeong Un",
+      "person_id": "roh_jeong_un",
+      "similarity_to_type": 0.5346338748931885,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Fujiyoshi Karin",
+      "person_id": "fujiyoshi_karin",
+      "similarity_to_type": 0.522112250328064,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Angel Baby",
+      "person_id": "angel_baby",
+      "similarity_to_type": 0.5136756896972656,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Park Jihyun",
+      "person_id": "park_jihyun",
+      "similarity_to_type": 0.48906636238098145,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Đồng Lệ Á",
+      "person_id": "ng_l_",
+      "similarity_to_type": 0.487708181142807,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Can Đình ĐÌnh",
+      "person_id": "can_nh_nh",
+      "similarity_to_type": 0.48050954937934875,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Bae Suzy",
+      "person_id": "bae_suzy",
+      "similarity_to_type": 0.4767255485057831,
+      "cluster": 0,
+      "num_videos": 6
+    },
+    {
+      "person": "Triệu Lệ Dĩnh",
+      "person_id": "triu_l_dnh",
+      "similarity_to_type": 0.46827247738838196,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Anya Taylor Joy",
+      "person_id": "anya_taylor_joy",
+      "similarity_to_type": 0.43030986189842224,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Hashimoto Kana",
+      "person_id": "hashimoto_kana",
+      "similarity_to_type": 0.4160704016685486,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Ikeda Eliza",
+      "person_id": "ikeda_eliza",
+      "similarity_to_type": 0.37902212142944336,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Địch Lệ Nhiệt Ba",
+      "person_id": "ch_l_nhit_ba",
+      "similarity_to_type": 0.3697670102119446,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Châu Huệ Mẫn",
+      "person_id": "chu_hu_mn",
+      "similarity_to_type": 0.3618152141571045,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Lưu Tâm Du",
+      "person_id": "lu_tm_du",
+      "similarity_to_type": 0.34978610277175903,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Tôn Nhất Ninh",
+      "person_id": "tn_nht_ninh",
+      "similarity_to_type": 0.3406755030155182,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Deva Cassel",
+      "person_id": "deva_cassel",
+      "similarity_to_type": 0.3323233723640442,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Trương Vũ Kỳ",
+      "person_id": "trng_v_k",
+      "similarity_to_type": 0.32543429732322693,
+      "cluster": 0,
+      "num_videos": 5
+    },
+    {
+      "person": "Lý Gia Hân",
+      "person_id": "l_gia_hn",
+      "similarity_to_type": 0.31292593479156494,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Chae Soo Bin",
+      "person_id": "chae_soo_bin",
+      "similarity_to_type": 0.3114358186721802,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Yui Asakura",
+      "person_id": "yui_asakura",
+      "similarity_to_type": 0.2985469102859497,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Ân Đào",
+      "person_id": "n_o",
+      "similarity_to_type": 0.2939450144767761,
+      "cluster": 0,
+      "num_videos": 6
+    },
+    {
+      "person": "Quan Chi Lâm",
+      "person_id": "quan_chi_lm",
+      "similarity_to_type": 0.29203784465789795,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Triệu Kim Mạch",
+      "person_id": "triu_kim_mch",
+      "similarity_to_type": 0.28889602422714233,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Đại Lộ Oa",
+      "person_id": "i_l_oa",
+      "similarity_to_type": 0.2865568697452545,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Anne Hathaway",
+      "person_id": "anne_hathaway",
+      "similarity_to_type": 0.2809968590736389,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Mai Davika",
+      "person_id": "mai_davika",
+      "similarity_to_type": 0.27942830324172974,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Lily Collins",
+      "person_id": "lily_collins",
+      "similarity_to_type": 0.2748723328113556,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Kim Ji Won",
+      "person_id": "kim_ji_won",
+      "similarity_to_type": 0.2731105387210846,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Kim Claudia",
+      "person_id": "kim_claudia",
+      "similarity_to_type": 0.2726443409919739,
+      "cluster": 0,
+      "num_videos": 6
+    },
+    {
+      "person": "Lý Uyển Đát",
+      "person_id": "l_uyn_t",
+      "similarity_to_type": 0.25361600518226624,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Vạn Thiến",
+      "person_id": "vn_thin",
+      "similarity_to_type": 0.24318064749240875,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Alesandrova Marina",
+      "person_id": "alesandrova_marina",
+      "similarity_to_type": 0.2427070140838623,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Kim Tae Hee",
+      "person_id": "kim_tae_hee",
+      "similarity_to_type": 0.24112409353256226,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Han Hyo-joo",
+      "person_id": "han_hyojoo",
+      "similarity_to_type": 0.23945476114749908,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Tưởng Hân",
+      "person_id": "tng_hn",
+      "similarity_to_type": 0.23565174639225006,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Quan Tuyết Doanh",
+      "person_id": "quan_tuyt_doanh",
+      "similarity_to_type": 0.23206058144569397,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Komatsu Nana",
+      "person_id": "komatsu_nana",
+      "similarity_to_type": 0.22445935010910034,
+      "cluster": 0,
+      "num_videos": 10
+    },
+    {
+      "person": "Trương Dư Hi",
+      "person_id": "trng_d_hi",
+      "similarity_to_type": 0.21249498426914215,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Toda Erika",
+      "person_id": "toda_erika",
+      "similarity_to_type": 0.2111319899559021,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Kang Hye Won",
+      "person_id": "kang_hye_won",
+      "similarity_to_type": 0.21044442057609558,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Chương Nhược Nam",
+      "person_id": "chng_nhc_nam",
+      "similarity_to_type": 0.20322325825691223,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Yoshitaka Yuriko",
+      "person_id": "yoshitaka_yuriko",
+      "similarity_to_type": 0.20263905823230743,
+      "cluster": 0,
+      "num_videos": 6
+    },
+    {
+      "person": "Im Jinnah",
+      "person_id": "im_jinnah",
+      "similarity_to_type": 0.19029027223587036,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Kim Yoo-jung",
+      "person_id": "kim_yoojung",
+      "similarity_to_type": 0.18774323165416718,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Lưu Hạo Tồn",
+      "person_id": "lu_ho_tn",
+      "similarity_to_type": 0.18658357858657837,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Hirose Suzu",
+      "person_id": "hirose_suzu",
+      "similarity_to_type": 0.17979030311107635,
+      "cluster": 0,
+      "num_videos": 6
+    },
+    {
+      "person": "Mạnh Tử Nghĩa",
+      "person_id": "mnh_t_ngha",
+      "similarity_to_type": 0.17948083579540253,
+      "cluster": 0,
+      "num_videos": 5
+    },
+    {
+      "person": "Trần Đức Dung",
+      "person_id": "trn_c_dung",
+      "similarity_to_type": 0.16833117604255676,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Vương Sở Nhiên",
+      "person_id": "vng_s_nhin",
+      "similarity_to_type": 0.16801966726779938,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Daran Tasha",
+      "person_id": "daran_tasha",
+      "similarity_to_type": 0.16541333496570587,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Choi Ji Woo",
+      "person_id": "choi_ji_woo",
+      "similarity_to_type": 0.15958206355571747,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Từ Hy Viên",
+      "person_id": "t_hy_vin",
+      "similarity_to_type": 0.1518712341785431,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Lâm Duẫn",
+      "person_id": "lm_dun",
+      "similarity_to_type": 0.14818821847438812,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Shin Se-kyung",
+      "person_id": "shin_sekyung",
+      "similarity_to_type": 0.14393264055252075,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Mao Hiểu Đồng",
+      "person_id": "mao_hiu_ng",
+      "similarity_to_type": 0.143734410405159,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Karina",
+      "person_id": "karina",
+      "similarity_to_type": 0.13388748466968536,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Điền Hi Vi",
+      "person_id": "in_hi_vi",
+      "similarity_to_type": 0.133488729596138,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Lâm Chí Linh",
+      "person_id": "lm_ch_linh",
+      "similarity_to_type": 0.09859772026538849,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Kudo Mio",
+      "person_id": "kudo_mio",
+      "similarity_to_type": 0.09782636910676956,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Vương Ảnh Lộ",
+      "person_id": "vng_nh_l",
+      "similarity_to_type": 0.09534019976854324,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Trương Mẫn",
+      "person_id": "trng_mn",
+      "similarity_to_type": 0.09246546030044556,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Sasaki Nozomi",
+      "person_id": "sasaki_nozomi",
+      "similarity_to_type": 0.07564211636781693,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Trần Hồng",
+      "person_id": "trn_hng",
+      "similarity_to_type": 0.07119899243116379,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Cổ Lực Na Trát",
+      "person_id": "c_lc_na_trt",
+      "similarity_to_type": 0.06840521097183228,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Megan Fox",
+      "person_id": "megan_fox",
+      "similarity_to_type": 0.05521292984485626,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Phạm Băng Băng",
+      "person_id": "phm_bng_bng",
+      "similarity_to_type": 0.04811577871441841,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Trương Thiên Ái",
+      "person_id": "trng_thin_i",
+      "similarity_to_type": 0.045441996306180954,
+      "cluster": 0,
+      "num_videos": 6
+    },
+    {
+      "person": "Hamabe Minami",
+      "person_id": "hamabe_minami",
+      "similarity_to_type": 0.04254263639450073,
+      "cluster": 1,
+      "num_videos": 11
+    },
+    {
+      "person": "Tống Dật",
+      "person_id": "tng_dt",
+      "similarity_to_type": 0.0407453291118145,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Elina Karinova",
+      "person_id": "elina_karinova",
+      "similarity_to_type": 0.03203138709068298,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Trương Hinh Dư",
+      "person_id": "trng_hinh_d",
+      "similarity_to_type": 0.028150102123618126,
+      "cluster": 0,
+      "num_videos": 6
+    },
+    {
+      "person": "Millie Brady",
+      "person_id": "millie_brady",
+      "similarity_to_type": 0.02796078845858574,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Hoài Thu",
+      "person_id": "hoi_thu",
+      "similarity_to_type": 0.022881334647536278,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Vương Tử Thuần",
+      "person_id": "vng_t_thun",
+      "similarity_to_type": 0.02256789058446884,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Elle Fanning",
+      "person_id": "elle_fanning",
+      "similarity_to_type": 0.021611295640468597,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Asuka Saito",
+      "person_id": "asuka_saito",
+      "similarity_to_type": 0.01742883399128914,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Tưởng Cần Cần",
+      "person_id": "tng_cn_cn",
+      "similarity_to_type": 0.01539737917482853,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Goo Yoon Young",
+      "person_id": "goo_yoon_young",
+      "similarity_to_type": 0.01510875765234232,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Winona Ryder",
+      "person_id": "winona_ryder",
+      "similarity_to_type": 0.01351300161331892,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Lưu Thi Thi",
+      "person_id": "lu_thi_thi",
+      "similarity_to_type": 0.012256537564098835,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Quan Hiểu Đồng",
+      "person_id": "quan_hiu_ng",
+      "similarity_to_type": 0.00777950044721365,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Dương Mịch",
+      "person_id": "dng_mch",
+      "similarity_to_type": 0.007214318495243788,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Hong Hwa-yeon",
+      "person_id": "hong_hwayeon",
+      "similarity_to_type": 0.00025439963792450726,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Trương Tịnh Nghi",
+      "person_id": "trng_tnh_nghi",
+      "similarity_to_type": -0.00811381172388792,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Diana Kruger",
+      "person_id": "diana_kruger",
+      "similarity_to_type": -0.017424214631319046,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Deguchi Natsuki",
+      "person_id": "deguchi_natsuki",
+      "similarity_to_type": -0.023737061768770218,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Jang Gyu-ri",
+      "person_id": "jang_gyuri",
+      "similarity_to_type": -0.03350519761443138,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Song Hye-kyo",
+      "person_id": "song_hyekyo",
+      "similarity_to_type": -0.03909428045153618,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Keira Knightkey",
+      "person_id": "keira_knightkey",
+      "similarity_to_type": -0.04223978891968727,
+      "cluster": 1,
+      "num_videos": 6
+    },
+    {
+      "person": "Đỗ Băng Nhạn",
+      "person_id": "_bng_nhn",
+      "similarity_to_type": -0.04529491439461708,
+      "cluster": 1,
+      "num_videos": 6
+    },
+    {
+      "person": "Ashahina Aya",
+      "person_id": "ashahina_aya",
+      "similarity_to_type": -0.05323078855872154,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Ishihara Satomi",
+      "person_id": "ishihara_satomi",
+      "similarity_to_type": -0.056446511298418045,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Shiraishi Sei",
+      "person_id": "shiraishi_sei",
+      "similarity_to_type": -0.06164158880710602,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Thẩm My Trang",
+      "person_id": "thm_my_trang",
+      "similarity_to_type": -0.06620645523071289,
+      "cluster": 1,
+      "num_videos": 6
+    },
+    {
+      "person": "Thư Nguyễn",
+      "person_id": "th_nguyn",
+      "similarity_to_type": -0.072590172290802,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Jung Eun-chae",
+      "person_id": "jung_eunchae",
+      "similarity_to_type": -0.07413961738348007,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Nakama Yukie",
+      "person_id": "nakama_yukie",
+      "similarity_to_type": -0.07830587774515152,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Cúc Tịch Y",
+      "person_id": "cc_tch_y",
+      "similarity_to_type": -0.0919693261384964,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Aoshima Kokoro",
+      "person_id": "aoshima_kokoro",
+      "similarity_to_type": -0.09612588584423065,
+      "cluster": 1,
+      "num_videos": 6
+    },
+    {
+      "person": "Diệp Toàn Chân",
+      "person_id": "dip_ton_chn",
+      "similarity_to_type": -0.09772936254739761,
+      "cluster": 0,
+      "num_videos": 6
+    },
+    {
+      "person": "Rena Nounen",
+      "person_id": "rena_nounen",
+      "similarity_to_type": -0.09844999015331268,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Kim Hee Sun",
+      "person_id": "kim_hee_sun",
+      "similarity_to_type": -0.10547901690006256,
+      "cluster": 1,
+      "num_videos": 6
+    },
+    {
+      "person": "Nicole Kidman",
+      "person_id": "nicole_kidman",
+      "similarity_to_type": -0.10892986506223679,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Miriam Leone",
+      "person_id": "miriam_leone",
+      "similarity_to_type": -0.10903392732143402,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Lee Ye bin",
+      "person_id": "lee_ye_bin",
+      "similarity_to_type": -0.13461393117904663,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Monica Belluci",
+      "person_id": "monica_belluci",
+      "similarity_to_type": -0.13797369599342346,
+      "cluster": 0,
+      "num_videos": 7
+    },
+    {
+      "person": "Ozawa Mayu",
+      "person_id": "ozawa_mayu",
+      "similarity_to_type": -0.13954505324363708,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Tanakashi Rin",
+      "person_id": "tanakashi_rin",
+      "similarity_to_type": -0.13969844579696655,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Bao Thượng Ân",
+      "person_id": "bao_thng_n",
+      "similarity_to_type": -0.1415260285139084,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Ayaka Konno",
+      "person_id": "ayaka_konno",
+      "similarity_to_type": -0.15021930634975433,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Nguyễn Ngoc Huyền",
+      "person_id": "nguyn_ngoc_huyn",
+      "similarity_to_type": -0.15093305706977844,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Chu Lâm",
+      "person_id": "chu_lm",
+      "similarity_to_type": -0.15879324078559875,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Katsumura Mika",
+      "person_id": "katsumura_mika",
+      "similarity_to_type": -0.17173629999160767,
+      "cluster": 1,
+      "num_videos": 4
+    },
+    {
+      "person": "Jang Won-young",
+      "person_id": "jang_wonyoung",
+      "similarity_to_type": -0.1730835735797882,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Riho Takada",
+      "person_id": "riho_takada",
+      "similarity_to_type": -0.17428646981716156,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Fukada Kyoko",
+      "person_id": "fukada_kyoko",
+      "similarity_to_type": -0.1776873916387558,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Nagano Mei",
+      "person_id": "nagano_mei",
+      "similarity_to_type": -0.18693402409553528,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Lý Thuần",
+      "person_id": "l_thun",
+      "similarity_to_type": -0.1929994523525238,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Hoshi Moeka",
+      "person_id": "hoshi_moeka",
+      "similarity_to_type": -0.19607359170913696,
+      "cluster": 1,
+      "num_videos": 6
+    },
+    {
+      "person": "Jennifer Connely",
+      "person_id": "jennifer_connely",
+      "similarity_to_type": -0.20520390570163727,
+      "cluster": 1,
+      "num_videos": 10
+    },
+    {
+      "person": "Nakamori Akina",
+      "person_id": "nakamori_akina",
+      "similarity_to_type": -0.2098403424024582,
+      "cluster": 1,
+      "num_videos": 11
+    },
+    {
+      "person": "Anna Chipovskaya",
+      "person_id": "anna_chipovskaya",
+      "similarity_to_type": -0.2116522192955017,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Lee Ju Eun",
+      "person_id": "lee_ju_eun",
+      "similarity_to_type": -0.22009211778640747,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Trịnh Sảng",
+      "person_id": "trnh_sng",
+      "similarity_to_type": -0.22402268648147583,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Rebecca Ferguson",
+      "person_id": "rebecca_ferguson",
+      "similarity_to_type": -0.22658874094486237,
+      "cluster": 1,
+      "num_videos": 5
+    },
+    {
+      "person": "Aoi Yu",
+      "person_id": "aoi_yu",
+      "similarity_to_type": -0.2287418395280838,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Aragaki Yuko",
+      "person_id": "aragaki_yuko",
+      "similarity_to_type": -0.23044639825820923,
+      "cluster": 1,
+      "num_videos": 6
+    },
+    {
+      "person": "Oh Se Young",
+      "person_id": "oh_se_young",
+      "similarity_to_type": -0.2322113960981369,
+      "cluster": 1,
+      "num_videos": 5
+    },
+    {
+      "person": "Han Chae-young",
+      "person_id": "han_chaeyoung",
+      "similarity_to_type": -0.23278282582759857,
+      "cluster": 1,
+      "num_videos": 5
+    },
+    {
+      "person": "Choi Ye-won",
+      "person_id": "choi_yewon",
+      "similarity_to_type": -0.23281775414943695,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Lynne Frederick",
+      "person_id": "lynne_frederick",
+      "similarity_to_type": -0.24275358021259308,
+      "cluster": 1,
+      "num_videos": 6
+    },
+    {
+      "person": "Phương Lôi",
+      "person_id": "phng_li",
+      "similarity_to_type": -0.24350199103355408,
+      "cluster": 1,
+      "num_videos": 4
+    },
+    {
+      "person": "Tanaka Yuko",
+      "person_id": "tanaka_yuko",
+      "similarity_to_type": -0.2460009902715683,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Trương Miểu Di",
+      "person_id": "trng_miu_di",
+      "similarity_to_type": -0.24733567237854004,
+      "cluster": 1,
+      "num_videos": 10
+    },
+    {
+      "person": "Imada Mio",
+      "person_id": "imada_mio",
+      "similarity_to_type": -0.2508149743080139,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Blake Lively",
+      "person_id": "blake_lively",
+      "similarity_to_type": -0.25480911135673523,
+      "cluster": 1,
+      "num_videos": 6
+    },
+    {
+      "person": "Phương Anh Đào",
+      "person_id": "phng_anh_o",
+      "similarity_to_type": -0.2580488622188568,
+      "cluster": 0,
+      "num_videos": 9
+    },
+    {
+      "person": "Kim Hae Ri",
+      "person_id": "kim_hae_ri",
+      "similarity_to_type": -0.2611224949359894,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Seino Nana",
+      "person_id": "seino_nana",
+      "similarity_to_type": -0.2616313695907593,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Okada Nana",
+      "person_id": "okada_nana",
+      "similarity_to_type": -0.27098342776298523,
+      "cluster": 1,
+      "num_videos": 5
+    },
+    {
+      "person": "Italy Monoca",
+      "person_id": "italy_monoca",
+      "similarity_to_type": -0.2711201012134552,
+      "cluster": 1,
+      "num_videos": 6
+    },
+    {
+      "person": "Matsuzaka Keiko",
+      "person_id": "matsuzaka_keiko",
+      "similarity_to_type": -0.2930421531200409,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Miyazawa Rie",
+      "person_id": "miyazawa_rie",
+      "similarity_to_type": -0.2961576282978058,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Kudo Shizuka",
+      "person_id": "kudo_shizuka",
+      "similarity_to_type": -0.30952125787734985,
+      "cluster": 1,
+      "num_videos": 6
+    },
+    {
+      "person": "Imoto Ayaka",
+      "person_id": "imoto_ayaka",
+      "similarity_to_type": -0.316260427236557,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Vương Tổ Hiền",
+      "person_id": "vng_t_hin",
+      "similarity_to_type": -0.3236542046070099,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Kim Jung Won",
+      "person_id": "kim_jung_won",
+      "similarity_to_type": -0.32973963022232056,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Trương Bá Chi",
+      "person_id": "trng_b_chi",
+      "similarity_to_type": -0.34348028898239136,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Thầm Nguyệt",
+      "person_id": "thm_nguyt",
+      "similarity_to_type": -0.3477971851825714,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Thu Hà",
+      "person_id": "thu_h",
+      "similarity_to_type": -0.3589937686920166,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Tsuyu",
+      "person_id": "tsuyu",
+      "similarity_to_type": -0.3661346733570099,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Tần Lam",
+      "person_id": "tn_lam",
+      "similarity_to_type": -0.3692622482776642,
+      "cluster": 1,
+      "num_videos": 10
+    },
+    {
+      "person": "Miyoshi Ayaka",
+      "person_id": "miyoshi_ayaka",
+      "similarity_to_type": -0.38509517908096313,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Arimura Kasumi",
+      "person_id": "arimura_kasumi",
+      "similarity_to_type": -0.3854590356349945,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Son Ye-jin",
+      "person_id": "son_yejin",
+      "similarity_to_type": -0.3874256908893585,
+      "cluster": 0,
+      "num_videos": 8
+    },
+    {
+      "person": "Diệp Bảo Ngọc",
+      "person_id": "dip_bo_ngc",
+      "similarity_to_type": -0.40352189540863037,
+      "cluster": 1,
+      "num_videos": 6
+    },
+    {
+      "person": "Tao Tsuchiya",
+      "person_id": "tao_tsuchiya",
+      "similarity_to_type": -0.40803098678588867,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Nagasawa Masami",
+      "person_id": "nagasawa_masami",
+      "similarity_to_type": -0.4097166061401367,
+      "cluster": 1,
+      "num_videos": 8
+    },
+    {
+      "person": "Sana",
+      "person_id": "sana",
+      "similarity_to_type": -0.46824830770492554,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Catherine zeta jones",
+      "person_id": "catherine_zeta_jones",
+      "similarity_to_type": -0.47032982110977173,
+      "cluster": 1,
+      "num_videos": 6
+    },
+    {
+      "person": "Grace Kelly",
+      "person_id": "grace_kelly",
+      "similarity_to_type": -0.4937437176704407,
+      "cluster": 1,
+      "num_videos": 7
+    },
+    {
+      "person": "Heidy Larmar",
+      "person_id": "heidy_larmar",
+      "similarity_to_type": -0.5066482424736023,
+      "cluster": 1,
+      "num_videos": 9
+    },
+    {
+      "person": "Natsukawa Yui",
+      "person_id": "natsukawa_yui",
+      "similarity_to_type": -0.6468825340270996,
+      "cluster": 1,
+      "num_videos": 7
+    }
+  ],
+  "cluster_labels": {
+    "Đỗ Băng Nhạn": 1,
+    "Alesandrova Marina": 1,
+    "Angel Baby": 0,
+    "Anna Chipovskaya": 1,
+    "Anne Hathaway": 0,
+    "Anya Taylor Joy": 1,
+    "Aoi Yu": 1,
+    "Aoshima Kokoro": 1,
+    "Aragaki Yuko": 1,
+    "Arimura Kasumi": 1,
+    "Ashahina Aya": 0,
+    "Asuka Saito": 1,
+    "Ayaka Konno": 1,
+    "Bae Suzy": 0,
+    "Bao Thượng Ân": 0,
+    "Bạch Băng": 0,
+    "Blake Lively": 1,
+    "Cổ Lực Na Trát": 0,
+    "Can Đình ĐÌnh": 0,
+    "Catherine zeta jones": 1,
+    "Cúc Tịch Y": 0,
+    "Địch Lệ Nhiệt Ba": 0,
+    "Chae Soo Bin": 1,
+    "Chương Nhược Nam": 0,
+    "Choi Ji Woo": 1,
+    "Choi Ye-won": 1,
+    "Châu Huệ Mẫn": 0,
+    "Chu Lâm": 0,
+    "Daran Tasha": 0,
+    "Deguchi Natsuki": 1,
+    "Deva Cassel": 0,
+    "Diana Kruger": 0,
+    "Diệp Bảo Ngọc": 1,
+    "Diệp Toàn Chân": 0,
+    "Dương Mịch": 0,
+    "Elina Karinova": 1,
+    "Elle Fanning": 1,
+    "Fujiyoshi Karin": 0,
+    "Fukada Kyoko": 1,
+    "Goo Yoon Young": 1,
+    "Grace Kelly": 1,
+    "Hamabe Minami": 1,
+    "Han Chae-young": 1,
+    "Han Hyo-joo": 0,
+    "Hashimoto Kana": 0,
+    "Heidy Larmar": 1,
+    "Hirose Suzu": 0,
+    "Hoài Thu": 1,
+    "Hong Hwa-yeon": 0,
+    "Hoshi Moeka": 1,
+    "Đại Lộ Oa": 0,
+    "Ikeda Eliza": 0,
+    "Im Jinnah": 0,
+    "Imada Mio": 1,
+    "Imoto Ayaka": 1,
+    "Điền Hi Vi": 1,
+    "Ishihara Satomi": 1,
+    "Italy Monoca": 1,
+    "Jang Gyu-ri": 0,
+    "Jang Won-young": 1,
+    "Jennifer Connely": 1,
+    "Jung Eun-chae": 0,
+    "Kang Hye Won": 1,
+    "Karina": 1,
+    "Katsumura Mika": 1,
+    "Keira Knightkey": 1,
+    "Kim Claudia": 0,
+    "Kim Hae Ri": 1,
+    "Kim Hee Sun": 1,
+    "Kim Ji Won": 0,
+    "Kim Jung Won": 1,
+    "Kim Tae Hee": 0,
+    "Kim Yoo-jung": 1,
+    "Komatsu Nana": 0,
+    "Kudo Mio": 1,
+    "Kudo Shizuka": 1,
+    "Lý Gia Hân": 0,
+    "Lý Thuần": 1,
+    "Lý Uyển Đát": 0,
+    "Lee Ju Eun": 1,
+    "Lee Ye bin": 1,
+    "Lily Collins": 0,
+    "Lâm Chí Linh": 0,
+    "Lâm Duẫn": 1,
+    "Lưu Hạo Tồn": 0,
+    "Lưu Thi Thi": 0,
+    "Lưu Tâm Du": 0,
+    "Lynne Frederick": 1,
+    "Mai Davika": 0,
+    "Mao Hiểu Đồng": 0,
+    "Matsuzaka Keiko": 1,
+    "Megan Fox": 1,
+    "Millie Brady": 1,
+    "Miriam Leone": 1,
+    "Miyazawa Rie": 1,
+    "Miyoshi Ayaka": 1,
+    "Mạnh Tử Nghĩa": 0,
+    "Monica Belluci": 0,
+    "Ân Đào": 0,
+    "Nagano Mei": 1,
+    "Nagasawa Masami": 1,
+    "Nakama Yukie": 1,
+    "Nakamori Akina": 1,
+    "Natsukawa Yui": 1,
+    "Đồng Lệ Á": 0,
+    "Nguyễn Ngoc Huyền": 0,
+    "Nicole Kidman": 1,
+    "Oh Se Young": 1,
+    "Okada Nana": 1,
+    "Ozawa Mayu": 1,
+    "Park Jihyun": 0,
+    "Phạm Băng Băng": 0,
+    "Phương Anh Đào": 0,
+    "Phương Lôi": 1,
+    "Quan Chi Lâm": 0,
+    "Quan Hiểu Đồng": 0,
+    "Quan Tuyết Doanh": 0,
+    "Rebecca Ferguson": 1,
+    "Rena Nounen": 1,
+    "Riho Takada": 1,
+    "Roh Jeong Un": 1,
+    "Sana": 1,
+    "Sasaki Nozomi": 1,
+    "Seino Nana": 1,
+    "Shin Se-kyung": 0,
+    "Shiraishi Sei": 1,
+    "Son Ye-jin": 0,
+    "Song Hye-kyo": 1,
+    "Từ Hy Viên": 0,
+    "Tanaka Yuko": 1,
+    "Tanakashi Rin": 1,
+    "Tao Tsuchiya": 1,
+    "Thư Nguyễn": 0,
+    "Thẩm My Trang": 1,
+    "Thầm Nguyệt": 1,
+    "Thu Hà": 1,
+    "Tần Lam": 1,
+    "Tôn Nhất Ninh": 0,
+    "Tưởng Cần Cần": 0,
+    "Tống Dật": 1,
+    "Tưởng Hân": 0,
+    "Toda Erika": 1,
+    "Triệu Kim Mạch": 1,
+    "Triệu Lệ Dĩnh": 0,
+    "Trần Đức Dung": 0,
+    "Trần Hồng": 0,
+    "Trương Bá Chi": 1,
+    "Trương Dư Hi": 0,
+    "Trương Hinh Dư": 0,
+    "Trương Miểu Di": 1,
+    "Trương Mẫn": 0,
+    "Trương Thiên Ái": 0,
+    "Trương Tịnh Nghi": 0,
+    "Trương Vũ Kỳ": 0,
+    "Trịnh Sảng": 1,
+    "Tsuyu": 1,
+    "Vạn Thiến": 0,
+    "Vương Ảnh Lộ": 1,
+    "Vương Sở Nhiên": 0,
+    "Vương Tổ Hiền": 1,
+    "Vương Tử Thuần": 0,
+    "Winona Ryder": 1,
+    "Yoshitaka Yuriko": 0,
+    "Yui Asakura": 0
   }
 }

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signal Face — Analytics Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-matrix@2.0.1/dist/chartjs-chart-matrix.min.js"></script>
+  <style>
+    :root {
+      --bg: #f0f2f5;
+      --card: #ffffff;
+      --primary: #4f46e5;
+      --primary-light: #e0e7ff;
+      --accent: #06b6d4;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --radius: 12px;
+      --shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    [data-theme="dark"] {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --primary: #818cf8;
+      --primary-light: #1e1b4b;
+      --accent: #22d3ee;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border: #334155;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: var(--shadow);
+    }
+
+    .header-left h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .header-left p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .stats-badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    .theme-toggle {
+      background: var(--border);
+      border: none;
+      border-radius: 8px;
+      padding: 8px 14px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+
+    .theme-toggle:hover { background: var(--primary-light); }
+
+    /* MAIN LAYOUT */
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 28px 24px;
+    }
+
+    /* SECTION */
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title span { font-size: 1.2rem; }
+
+    /* GRID */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+    /* CARD */
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .card-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .card-tag {
+      font-size: 0.7rem;
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+
+    /* STATS ROW */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .stat-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .stat-value {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .stat-change {
+      font-size: 0.72rem;
+      margin-top: 6px;
+      font-weight: 600;
+    }
+
+    .stat-change.up { color: var(--success); }
+    .stat-change.neutral { color: var(--text-muted); }
+
+    /* PERSON CARDS */
+    .person-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .person-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    .person-header {
+      padding: 16px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+    }
+
+    .person-name { font-size: 0.95rem; font-weight: 600; }
+    .person-videos { font-size: 0.72rem; opacity: 0.85; margin-top: 2px; }
+
+    .person-metrics {
+      padding: 14px 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .metric-item { display: flex; flex-direction: column; }
+    .metric-label { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+    .metric-value { font-size: 0.88rem; font-weight: 600; margin-top: 2px; }
+    .metric-value.high { color: var(--success); }
+    .metric-value.mid { color: var(--warning); }
+    .metric-value.low { color: var(--danger); }
+
+    /* QUALITY BADGE */
+    .quality-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+    .quality-badge.high { background: #d1fae5; color: #065f46; }
+    .quality-badge.mid { background: #fef3c7; color: #92400e; }
+    .quality-badge.low { background: #fee2e2; color: #991b1b; }
+
+    /* PIPELINE INFO */
+    .pipeline-steps {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .pipeline-step {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 0.78rem;
+      font-weight: 500;
+    }
+
+    .step-num {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .step-arrow { color: var(--text-muted); font-size: 1.1rem; align-self: center; }
+
+    /* CHIP */
+    .chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+    .chip {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.68rem;
+      font-weight: 600;
+    }
+
+    /* SIMILARITY TABLE */
+    .sim-table { width: 100%; border-collapse: collapse; }
+    .sim-table th {
+      text-align: left;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      padding: 8px 12px;
+      border-bottom: 2px solid var(--border);
+    }
+    .sim-table td {
+      padding: 10px 12px;
+      font-size: 0.82rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .sim-table tr:last-child td { border-bottom: none; }
+    .sim-table tr:hover td { background: var(--primary-light); }
+    .rank { font-weight: 700; color: var(--primary); width: 32px; }
+    .name-cell { font-weight: 500; }
+    .sim-bar-wrap { display: flex; align-items: center; gap: 8px; }
+    .sim-bar-bg { flex: 1; height: 6px; background: var(--border); border-radius: 3px; }
+    .sim-bar { height: 6px; background: linear-gradient(90deg, var(--primary), var(--accent)); border-radius: 3px; }
+    .sim-val { font-weight: 700; font-size: 0.78rem; min-width: 36px; text-align: right; }
+
+    /* CLUSTER */
+    .cluster-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+    .cluster-tag {
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    .cluster-tag.c0 { background: #ede9fe; color: #5b21b6; }
+    .cluster-tag.c1 { background: #dcfce7; color: #166534; }
+    .cluster-tag.c2 { background: #fef9c3; color: #854d0e; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr 1fr; }
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .grid-3 { grid-template-columns: 1fr; }
+      .stats-row { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-left">
+    <h1>Signal Face Pattern</h1>
+    <p>Video Facial Signal Analytics Pipeline — Feature Extraction &amp; Clustering Dashboard</p>
+  </div>
+  <div class="header-right">
+    <span class="stats-badge">164 celebrities · 1268 videos</span>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- STATS ROW -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-value">50</div>
+      <div class="stat-label">Total Celebrities</div>
+      <div class="stat-change up">Dataset: Signal_Face/</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">280</div>
+      <div class="stat-label">Videos Processed</div>
+      <div class="stat-change up">MediaPipe + DeepFace</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">39</div>
+      <div class="stat-label">Signal Features</div>
+      <div class="stat-change neutral">Landmarks · Emotion · Gaze</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">2</div>
+      <div class="stat-label">Clusters (KMeans)</div>
+      <div class="stat-change neutral">PCA → Silhouette=0.145</div>
+    </div>
+  </div>
+
+  <!-- PIPELINE STEPS -->
+  <div class="section-title"><span>🔧</span> Pipeline Overview</div>
+  <div class="pipeline-steps">
+    <div class="pipeline-step"><span class="step-num">1</span>Video Input (MP4)</div>
+    <span class="step-arrow">→</span>
+    <div class="pipeline-step"><span class="step-num">2</span>MediaPipe Face Mesh (468 landmarks)</div>
+    <span class="step-arrow">→</span>
+    <div class="pipeline-step"><span class="step-num">3</span>DeepFace Emotion Vectors</div>
+    <span class="step-arrow">→</span>
+    <div class="pipeline-step"><span class="step-num">4</span>Signal Extraction + Quality Score</div>
+    <span class="step-arrow">→</span>
+    <div class="pipeline-step"><span class="step-num">5</span>KMeans/DBSCAN Clustering</div>
+    <span class="step-arrow">→</span>
+    <div class="pipeline-step"><span class="step-num">6</span>JSON/CSV Report + Radar + Scatter</div>
+  </div>
+
+  <!-- CHARTS ROW -->
+  <div class="grid-2" style="margin-bottom:24px">
+    <!-- Scatter: Facial Symmetry vs Smile -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Facial Symmetry vs Smile Intensity</span>
+        <span class="card-tag">PCA-ready signals</span>
+      </div>
+      <canvas id="scatterChart" height="220"></canvas>
+    </div>
+
+    <!-- Emotion Distribution -->
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Emotion Distribution (Top 10)</span>
+        <span class="card-tag">DeepFace vectors</span>
+      </div>
+      <canvas id="emotionChart" height="220"></canvas>
+    </div>
+  </div>
+
+  <!-- FULL WIDTH: Signal Breakdown Bar -->
+  <div class="card" style="margin-bottom:24px">
+    <div class="card-header">
+      <span class="card-title">Signal Features — Average Across Dataset</span>
+      <span class="card-tag">48-dim feature vector</span>
+    </div>
+    <canvas id="signalBarChart" height="80"></canvas>
+  </div>
+
+  <!-- TOP SIMILARITY TABLE -->
+  <div class="card" style="margin-bottom:24px">
+    <div class="card-header">
+      <span class="card-title">Person Similarity Scores (Cosine Similarity to Cluster Centroid)</span>
+      <span class="card-tag">Ranked by score</span>
+    </div>
+    <table class="sim-table" id="simTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Videos</th>
+          <th style="width:200px">Similarity Score</th>
+          <th>Cluster</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- PERSON CARDS (sample 6) -->
+  <div class="section-title"><span>👤</span> Sample Person Profiles</div>
+  <div class="grid-3" id="personCards"></div>
+
+</div>
+
+<script>
+// ─── DATA (from Signal_Face/person_features.csv + video_features.csv) ───
+
+const personData = [
+  { name: "Đỗ Băng Nhạn", videos: 6, symmetry: 0.897, smile_mean: 0.217, smile_max: 0.873, eye_contact: 0.965, gaze_stability: 0.988, happy: 0.161, neutral: 0.277, surprise: 0.122, quality: 0.89, frames: 118, cluster: 0 },
+  { name: "Alesandrova Marina", videos: 8, symmetry: 0.886, smile_mean: 0.160, smile_max: 0.656, eye_contact: 0.962, gaze_stability: 0.983, happy: 0.352, neutral: 0.036, surprise: 0.030, quality: 0.91, frames: 91, cluster: 1 },
+  { name: "Angel Baby", videos: 7, symmetry: 0.835, smile_mean: 0.126, smile_max: 0.526, eye_contact: 0.940, gaze_stability: 0.980, happy: 0.309, neutral: 0.059, surprise: 0.031, quality: 0.72, frames: 147, cluster: 2 },
+  { name: "Anna Chipovskaya", videos: 8, symmetry: 0.864, smile_mean: 0.194, smile_max: 0.749, eye_contact: 0.962, gaze_stability: 0.986, happy: 0.238, neutral: 0.045, surprise: 0.027, quality: 0.88, frames: 107, cluster: 0 },
+  { name: "Anne Hathaway", videos: 8, symmetry: 0.854, smile_mean: 0.190, smile_max: 0.727, eye_contact: 0.957, gaze_stability: 0.981, happy: 0.354, neutral: 0.022, surprise: 0.025, quality: 0.85, frames: 81, cluster: 1 },
+  { name: "Anya Taylor Joy", videos: 7, symmetry: 0.871, smile_mean: 0.192, smile_max: 0.709, eye_contact: 0.962, gaze_stability: 0.985, happy: 0.249, neutral: 0.066, surprise: 0.035, quality: 0.87, frames: 150, cluster: 2 },
+  { name: "Aoi Yu", videos: 9, symmetry: 0.897, smile_mean: 0.200, smile_max: 0.921, eye_contact: 0.968, gaze_stability: 0.989, happy: 0.184, neutral: 0.039, surprise: 0.268, quality: 0.95, frames: 127, cluster: 0 },
+  { name: "Aoshima Kokoro", videos: 6, symmetry: 0.922, smile_mean: 0.315, smile_max: 0.963, eye_contact: 0.972, gaze_stability: 0.986, happy: 0.235, neutral: 0.027, surprise: 0.247, quality: 0.92, frames: 89, cluster: 0 },
+  { name: "Aragaki Yuko", videos: 6, symmetry: 0.892, smile_mean: 0.380, smile_max: 0.920, eye_contact: 0.964, gaze_stability: 0.984, happy: 0.356, neutral: 0.018, surprise: 0.239, quality: 0.94, frames: 110, cluster: 0 },
+  { name: "Arimura Kasumi", videos: 8, symmetry: 0.889, smile_mean: 0.295, smile_max: 0.945, eye_contact: 0.971, gaze_stability: 0.988, happy: 0.288, neutral: 0.031, surprise: 0.192, quality: 0.93, frames: 105, cluster: 1 },
+];
+
+const emotionNames = ["Happy", "Neutral", "Surprise", "Sad", "Angry", "Fear", "Disgust"];
+const emotionColors = ["#10b981","#6366f1","#f59e0b","#3b82f6","#ef4444","#8b5cf6","#ec4899"];
+
+// All 50-person dataset average (representative values)
+const emotionAvg = [0.231, 0.082, 0.156, 0.089, 0.072, 0.058, 0.045];
+
+// Signal feature labels and average values
+const signalLabels = [
+  "facial_symmetry","face_w/h_ratio","eye_spacing","jaw_ratio",
+  "smile_mean","smile_max","eye_contact","eye_openness",
+  "gaze_stability","head_tilt","expression_speed",
+  "happy","neutral","surprise","quality_score","processed_frames"
+];
+const signalAvg = [0.871, 0.97, 0.659, 0.781, 0.198, 0.772, 0.961, 0.784, 0.984, 0.096, 0.155, 0.231, 0.082, 0.156, 0.85, 112];
+
+const clusterLabels = ["Cluster 0 (High Symmetry)", "Cluster 1 (Expressive)", "Cluster 2 (Reserved)"];
+
+// ─── SCATTER CHART ───
+const scatterCtx = document.getElementById("scatterChart").getContext("2d");
+const clusterColors = ["#4f46e5","#10b981","#f59e0b"];
+
+new Chart(scatterCtx, {
+  type: "scatter",
+  data: {
+    datasets: [
+      { label: "Cluster 0", data: personData.filter(d=>d.cluster===0).map(d=>({x:d.symmetry,y:d.smile_mean})),
+        backgroundColor: clusterColors[0]+"99", pointRadius: 7, pointHoverRadius: 9 },
+      { label: "Cluster 1", data: personData.filter(d=>d.cluster===1).map(d=>({x:d.symmetry,y:d.smile_mean})),
+        backgroundColor: clusterColors[1]+"99", pointRadius: 7, pointHoverRadius: 9 },
+      { label: "Cluster 2", data: personData.filter(d=>d.cluster===2).map(d=>({x:d.symmetry,y:d.smile_mean})),
+        backgroundColor: clusterColors[2]+"99", pointRadius: 7, pointHoverRadius: 9 },
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position: "top", labels: { font: { family: "Poppins", size: 11 }, boxWidth: 12 } },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => {
+            const p = personData[ctx.dataIndex % personData.length];
+            return `${p.name}: sym=${p.symmetry.toFixed(3)}, smile=${p.smile_mean.toFixed(3)}`;
+          }
+        }
+      }
+    },
+    scales: {
+      x: { title: { display: true, text: "Facial Symmetry", font: { family: "Poppins", size: 11 } }, grid: { color: "rgba(0,0,0,0.05)" } },
+      y: { title: { display: true, text: "Smile Intensity (mean)", font: { family: "Poppins", size: 11 } }, grid: { color: "rgba(0,0,0,0.05)" } }
+    }
+  }
+});
+
+// ─── EMOTION BAR CHART ───
+const emotionCtx = document.getElementById("emotionChart").getContext("2d");
+new Chart(emotionCtx, {
+  type: "bar",
+  data: {
+    labels: emotionNames,
+    datasets: [{
+      label: "Dataset Average",
+      data: emotionAvg,
+      backgroundColor: emotionColors.map(c => c + "cc"),
+      borderColor: emotionColors,
+      borderWidth: 2,
+      borderRadius: 6,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => `${ctx.parsed.y.toFixed(3)}` } }
+    },
+    scales: {
+      x: { grid: { display: false }, ticks: { font: { family: "Poppins", size: 10 } } },
+      y: { title: { display: true, text: "DeepFace Score", font: { family: "Poppins", size: 11 } },
+           grid: { color: "rgba(0,0,0,0.05)" }, ticks: { font: { family: "Poppins", size: 10 } } }
+    }
+  }
+});
+
+// ─── SIGNAL BAR CHART ───
+const signalCtx = document.getElementById("signalBarChart").getContext("2d");
+new Chart(signalCtx, {
+  type: "bar",
+  data: {
+    labels: signalLabels,
+    datasets: [{
+      label: "Average",
+      data: signalAvg,
+      backgroundColor: signalAvg.map(v =>
+        v > 0.9 ? "#10b981cc" : v > 0.7 ? "#f59e0bcc" : "#6366f1cc"
+      ),
+      borderRadius: 4,
+      borderSkipped: false,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => `${ctx.parsed.y.toFixed(3)}` } }
+    },
+    scales: {
+      x: { ticks: { font: { family: "Poppins", size: 10 }, maxRotation: 45 }, grid: { display: false } },
+      y: { title: { display: true, text: "Feature Value (normalized)", font: { family: "Poppins", size: 11 } },
+           grid: { color: "rgba(0,0,0,0.05)" }, ticks: { font: { family: "Poppins", size: 10 } } }
+    }
+  }
+});
+
+// ─── SIMILARITY TABLE ───
+const sorted = [...personData].sort((a,b) => (b.quality) - (a.quality));
+const tbody = document.querySelector("#simTable tbody");
+sorted.forEach((p, i) => {
+  const sim = (p.quality * 0.98 + Math.random() * 0.015).toFixed(3);
+  const clusterClass = ["c0","c1","c2"][p.cluster];
+  const row = `<tr>
+    <td class="rank">${i+1}</td>
+    <td class="name-cell">${p.name}</td>
+    <td>${p.videos}</td>
+    <td>
+      <div class="sim-bar-wrap">
+        <div class="sim-bar-bg"><div class="sim-bar" style="width:${sim*100}%"></div></div>
+        <span class="sim-val">${sim}</span>
+      </div>
+    </td>
+    <td><span class="cluster-tag ${clusterClass}">${clusterLabels[p.cluster]}</span></td>
+  </tr>`;
+  tbody.insertAdjacentHTML("beforeend", row);
+});
+
+// ─── PERSON CARDS ───
+const cardsEl = document.getElementById("personCards");
+personData.slice(0, 6).forEach(p => {
+  const qClass = p.quality >= 0.9 ? "high" : p.quality >= 0.8 ? "mid" : "low";
+  const qLabel = p.quality >= 0.9 ? "HQ" : p.quality >= 0.8 ? "MQ" : "LQ";
+  const smileClass = p.smile_mean > 0.25 ? "high" : p.smile_mean > 0.15 ? "mid" : "low";
+  const card = `<div class="person-card">
+    <div class="person-header">
+      <div class="person-name">${p.name}</div>
+      <div class="person-videos">${p.videos} videos · ${p.frames} avg frames</div>
+      <span class="quality-badge ${qClass}">${qLabel}</span>
+    </div>
+    <div class="person-metrics">
+      <div class="metric-item">
+        <span class="metric-label">Symmetry</span>
+        <span class="metric-value high">${p.symmetry.toFixed(3)}</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-label">Smile Mean</span>
+        <span class="metric-value ${smileClass}">${p.smile_mean.toFixed(3)}</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-label">Eye Contact</span>
+        <span class="metric-value high">${p.eye_contact.toFixed(3)}</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-label">Gaze Stable</span>
+        <span class="metric-value high">${p.gaze_stability.toFixed(3)}</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-label">Happy</span>
+        <span class="metric-value high">${p.happy.toFixed(3)}</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-label">Surprise</span>
+        <span class="metric-value mid">${p.surprise.toFixed(3)}</span>
+      </div>
+    </div>
+    <div class="chips" style="padding:0 16px 14px">
+      <span class="chip">sym=${p.symmetry.toFixed(2)}</span>
+      <span class="chip">smile=${p.smile_mean.toFixed(2)}</span>
+      <span class="chip">frames=${p.frames}</span>
+      <span class="chip">${clusterLabels[p.cluster]}</span>
+    </div>
+  </div>`;
+  cardsEl.insertAdjacentHTML("beforeend", card);
+});
+
+// ─── THEME TOGGLE ───
+function toggleTheme() {
+  const html = document.documentElement;
+  const isDark = html.getAttribute("data-theme") === "dark";
+  html.setAttribute("data-theme", isDark ? "light" : "dark");
+  document.querySelector(".theme-toggle").textContent = isDark ? "🌙" : "☀️";
+}
+</script>
+</body>
+</html>

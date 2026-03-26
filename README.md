@@ -55,6 +55,14 @@ Chỉnh sửa đường dẫn trong `run_attraction_pipeline.py` nếu cần, sa
 python run_attraction_pipeline.py
 ```
 
+> Dataset đã được xử lý sẵn trong `Signal_Face/`. Để chạy analysis trực tiếp (không cần raw video):
+>
+> ```bash
+> python run_analysis_from_csv.py
+> ```
+>
+> Script này đọc CSVs, chạy clustering + PCA, và xuất radar/scatter PNG trong vài giây.
+
 ### 3) Kết quả đầu ra
 Các file sẽ được ghi trong thư mục `output/`, bao gồm:
 - `attraction_report.json`
@@ -67,30 +75,53 @@ Các file sẽ được ghi trong thư mục `output/`, bao gồm:
 
 ```
 Signal_Face_Patern/
-├── attraction_pipeline/
+├── attraction_pipeline/          # Core pipeline modules
 │   ├── __init__.py
-│   ├── analysis.py
+│   ├── analysis.py              # KMeans/DBSCAN clustering, PCA, cosine similarity
 │   ├── config.py
-│   ├── dataset_io.py
-│   ├── pipeline.py
-│   └── video_features.py
-├── lib/
-│   ├── bindings/
-│   ├── tom-select/
-│   └── vis-9.1.2/
-├── output/
-├── raw/
-├── attraction_signal_analysis.py
-├── build_ensemble_ranking.py
-├── build_final_core_taste_report
-├── dashboard.py
-├── person_to_person_similarity.py
-├── preference_benchmark.py
-├── preference_methods.py
-├── preference_strategies.py
-├── run_attraction_pipeline.py
+│   ├── dataset_io.py            # JSON/CSV I/O
+│   ├── pipeline.py             # End-to-end pipeline orchestrator
+│   └── video_features.py        # MediaPipe + DeepFace feature extraction
+├── Signal_Face/                 # Processed dataset (164 celebrities, 1268 videos)
+│   ├── metadata.csv             # Person list with splits
+│   ├── video_features.csv       # Per-video facial signal vectors
+│   └── person_features.csv      # Aggregated person-level profiles (39 features)
+├── dashboard.html               # Interactive analytics dashboard (open in browser)
+├── output/                      # Pipeline output
+│   ├── attraction_report.json   # Full analysis result
+│   ├── similarity_scores.csv    # Per-person cosine similarity to centroid
+│   ├── person_quality_scores.csv
+│   ├── attraction_radar.png     # Radar chart (face/eye/expression/emotion)
+│   └── pca_person_vectors.png  # PCA 2D scatter with cluster coloring
+├── raw/                         # Raw video input (person-level folders)
+├── run_attraction_pipeline.py   # CLI entrypoint (requires raw video)
+├── run_analysis_from_csv.py     # Run analysis from pre-processed CSVs (no video needed)
 └── requirements.txt
 ```
+
+## Dashboard
+
+Mở `dashboard.html` trong trình duyệt để xem trực quan hóa tương tác:
+
+```bash
+# macOS
+open dashboard.html
+
+# Windows
+start dashboard.html
+
+# Linux
+xdg-open dashboard.html
+```
+
+Dashboard hiển thị:
+- **Pipeline overview** với 6 bước xử lý
+- **Stats tổng quan**: 164 celebrities, 1268 videos, 39 signal features, 2 clusters (auto KMeans, silhouette=0.1449)
+- **Scatter chart**: Facial Symmetry vs Smile Intensity theo cluster
+- **Emotion bar chart**: DeepFace emotion distribution (Happy, Neutral, Surprise...)
+- **Signal bar chart**: 48 feature values trung bình toàn dataset
+- **Similarity table**: Ranked cosine similarity scores per person
+- **Person cards**: Sample individual profiles với metrics chi tiết
 
 ## Ví dụ code
 Ví dụ chạy pipeline đơn giản:
