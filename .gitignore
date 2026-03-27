@@ -17,7 +17,12 @@ venv/
 Thumbs.db
 
 # Raw dataset and large video files
+raw/
+Signal_Face/        # Download from HuggingFace separately
 
+# Claude
+.claude/
 
-# Optional: ignore generated images if repo gets heavy
-# output/*.png
+# IDE/editor
+.idea/
+.vscode/
